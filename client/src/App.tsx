@@ -1,20 +1,28 @@
-import { useState } from "react";
-import Hello from "./Hello";
+import { useChatRuntime } from "@assistant-ui/react-ai-sdk";
+import { AssistantRuntimeProvider } from "@assistant-ui/react";
+
+import { ThreadList } from "@/components/assistant-ui/thread-list";
+import { Thread } from "@/components/assistant-ui/thread";
+
+import { AssistantModal } from "@/components/assistant-ui/assistant-modal";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const runtime = useChatRuntime({
+    api: "/api/chat",
+  });
 
   return (
     <>
-      <Hello />
-      <h1>Vite + React</h1>
-      <div className="border border-red-500">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+      <AssistantRuntimeProvider runtime={runtime}>
+        <div className="grid h-dvh grid-cols-[200px_1fr] gap-x-2 px-4 py-4">
+          <ThreadList />
+          <Thread />
+        </div>
+      </AssistantRuntimeProvider>
+
+      <AssistantRuntimeProvider runtime={runtime}>
+        <AssistantModal />
+      </AssistantRuntimeProvider>
     </>
   );
 }
