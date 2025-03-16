@@ -1,965 +1,1126 @@
 [
   {
+    "id": 1,
     "name": "Food Republic",
     "address": "Lot 1.41.00 - 1.51.00 & P1.13.00 - P1.20.00, Level 1, Gourmet Emporium",
     "description": "Food Republic was founded on the concept of serving well-loved street food at affordable prices housed in the air-conditioned comfort of shopping malls. With the opening of the first outlet in Malaysia at Pavilion KL, the brand revolutionised the food court scene in Malaysia, introducing the quintessential integrated open-dining food atrium experience, featuring detailed décor & ambience, while bringing together the best of hawker fare and restaurant dining under a single roof.\nPromoting the appreciation of cultures and heritage in Asian cuisine, Food Republic appeals to diners seeking a harmony of flavours and vibrant mix of cuisines, experienced and shared under one roof while providing an immersive experience for all senses, including ‘live’ cooking featured through each stall’s open-kitchen concept.\nTourist Privilege:10% off normal price items.(Click for more info)",
     "url": "http://www.foodrepublic.com.my"
   },
   {
+    "id": 2,
     "name": "Cloud 9",
     "address": "Lot 9.104.00, Level 9, Pavilion Elite",
     "description": "Located on the top floor, Cloud 9 introduces a one-of-a-kind contemporary fine dining experience overlooking the bustle of Bukit Bintang. With a kitchen headed by celebrity Korean chef Ryan Lee who boasts intricate culinary skills, the lofty restaurant brings you a dining experience of new heights with a myriad of Asian-inspired French dishes that promise to tantalize your taste buds.",
     "url": null
   },
   {
+    "id": 3,
     "name": "Chez Choux",
     "address": "P1.06.00, Gourmet Emporium, Level 1",
     "description": "Chez Choux means “at the home of puff” in French. We strive to provide the most delicious cream puffs to the world! Our products are freshly baked everyday with fresh, natural ingredients as we are fully committed in giving our customers products of the highest quality. The crispiness and crunchiness of our puffs, combined with our fresh and rich custard cream will keep you coming back for more!",
     "url": "https://chezchoux.com.my/"
   },
   {
+    "id": 4,
     "name": "KyoChon",
     "address": "Lot 1.54.00 - 1.58.00, Level 1, Gourmet Emporium",
     "description": "Our fried chicken has been South Korea’s favourite for more than 20 years, and here’s why.\nWe fry every piece to order, giving you perfect, crispy skin and juicy, tender meat. We brush every piece with our special Korean sauces. We’re tastier.\nWe use canola oil to fry our fresh, drug-free chickens. We’re healthier.\nWe use only natural ingredients and no MSG. Ever. We’ve better quality.\nCome and be chickenlightened at KyoChon!",
     "url": "http://www.kyochon.com.my"
   },
   {
+    "id": 5,
     "name": "FIVE GUYS",
     "address": "Lot C3.06.01, Level 3, Connection",
     "description": "It’s your meal, so FIVE GUYS believes that you should get exactly what you want. That’s why FIVE GUYS has more than 250,000 possible topping combinations for you Burgers, Hotdogs and Sandwiches. Not to mention 1,000 different Shake mix-in combinations. The famous fries are a ‘boardwalk style’ fry, meaning they’re hand-cut on site each day and cooked in 100% peanut oil, will you go for Five Guys Style or spice things up with the Cajun fries\nOpening soon at Connection, Level 3 on 11 April 2022.",
     "url": "http://www.fiveguys.my/"
   },
   {
+    "id": 6,
     "name": "Lam Heung Ling Lemon Tea",
     "address": "T1.103.0 & T1.104.0",
     "description": "",
     "url": null
   },
   {
+    "id": 7,
     "name": "KGB – Killer Gourmet Burgers",
     "address": "Lot 4.102.00 & E4.100.0, Level 4, Pavilion Elite",
     "description": "KGB. Killer Gourmet Burgers, your casual dining space bursting with raw energy and creative handcrafted burgers, fries & desserts.Indulge in our chin-dripping juicy burgers, made with serious passion for the passionate.\nAfter all, life is too short for a bad burger.",
     "url": "http://www.kgb.my/"
   },
   {
+    "id": 8,
     "name": "Arthur’s Storehouse",
     "address": "Lot C4.06.02, Connection (Level 4)",
     "description": "Experience the magic of Arthur’s Storehouse – GuinnessMalaysia’s 1st Flagship Outlet.\nLearn about the brand’s rich history while enjoying theWorld’s No. 1 Stout alongside Guinness-infused food, cocktails, and even getyour hands on exclusive merchandise.\nIt is time to step into the world of Guinness, right here inthe heart of KL.",
     "url": "https://arthursstorehouse.com/"
   },
   {
+    "id": 9,
     "name": "Garrett Popcorn Shops",
     "address": "Lot 1.109.00, Level 1, Pavilion Elite",
     "description": "Garrett Popcorn Shops® – A Chicago Tradition from the USA since 1949\nFor over seven decades, Garrett Popcorn Shops has served gourmet popcorn using wholesome ingredients in their secret family recipes, passed down for generations. Custom grown, non-GMO butterfly and mushroom kernels are first hot-air popped in their kitchens, then enriched with flavor in seasoned, old-fashioned Copper Kettles. Because good things take time, Garrett Popcorn is handcrafted in small batches throughout the day.\nSignature recipes include the fan-invented, original Chicago-style popcorn, Chicago Mix®, which blends the sweetness of CaramelCrisp™ with the savory goodness of CheeseCorn; plus Buttery (a vegan treat!), Plain, CheeseCorn, CaramelCrisp, Almond CaramelCrisp and Macadamia CaramelCrisp.\nLike no other™, Garrett Popcorn enchants adoring fans around the world.\n\n\n",
     "url": "http://www.garrettpopcorn.my/"
   },
   {
+    "id": 10,
     "name": "Harriston Chocolatier Cafe",
     "address": "Lot 2.75.00, 2.71.01 & 2.71.02, Level 2, Couture Pavilion",
     "description": "Step into the irresistible realm of Harriston Chocolatier! Here, chocolate dreams come alive, surprising your senses with every divine bite. It’s an endless flavour adventure, brimming with delightful surprises and delectable treats from a treasured homegrown brand!\n\nLocation: Lot 2.75.00 Level 2, Pavilion Kuala Lumpur\nContact: +6017-843 9123",
     "url": "https://harristonchocolate.com/"
   },
   {
+    "id": 11,
     "name": "Nespresso",
     "address": "Lot 4.02.00, Level 4",
     "description": "Welcome to the world of Nespresso. Let’s begin your journey of indulgence and share all your coffee moments right here with #NespressoMY",
     "url": "https://www.nespresso.com/my/en/service-customer-care"
   },
   {
+    "id": 12,
     "name": "O’Galito",
     "address": "Level 3, Connection",
     "description": "Serving Mediterranean food, O’Galito combines the classic with the contemporary to achieve bold, exciting and comforting flavour. Take a gastronomic journey through the real Mediterranean taste!",
     "url": "https://www.facebook.com/ogalito.kl"
   },
   {
+    "id": 13,
     "name": "Gigi Coffee",
     "address": "Lot 1.07.00, Level 1, Gourmet Emporium",
     "description": "A simple start to all things happy, we’re your friendly coffee makers that make bad days good again. Gigi Coffee serves up quality and affordable cups of coffee-fixes for people on-the-go, be it a freshly brewed coffee or silky smooth Nitro Cold Brew Coffee. Liven up the experience by adding milk, capping with subtle sweet cream or adding chewy brown sugar boba! Infused with all things happy, they’re all about making everyone’s day a little brighter.",
     "url": "https://www.gigicoffee.com/"
   },
   {
+    "id": 14,
     "name": "Coolblog",
     "address": "Lot C5.06.00",
     "description": "Since 2005, Coolblog served some of the best tasting, high quality and affordable desserts and beverages in your neighbourhood. It is true for us then as it is now.\nThat is why we are committed to provide unmatched customer experience through our service, products, value & availability; we make it as easy and accessible as possible for our franchisees to own and operate their own business and we create an environment for our employees to build and grow their careers.\nEverything we do starts from one belief: everyone can treat themselves with the very best whenever they want to and as often as they like.",
     "url": "https://www.coolblog.com.my/"
   },
   {
+    "id": 15,
     "name": "Rotiboy",
     "address": "Lot 1.11.02, Level 1, Gourmet Emporium",
     "description": "The first Rotiboy was a neighbourhood bakery which baked fresh breads and loafs for household, kids to bring to school, cakes for birthdays celebrations, home-makers were our best friends. Filled with butter and topped with coffee flavored topping, Rotiboy it is a bun like no other. A signature Mexican coffee bun that’s crispy on the outside, moist and sweet on the inside.\n",
     "url": "https://www.rotiboy.com/"
   },
   {
+    "id": 16,
     "name": "Ichiban Boshi",
     "address": "Lot 1.14.00, Level 1, Gourmet Emporium",
     "description": "A meeting place for diners who truly enjoy a Japanese meal. With the contemporary design and cozy ambience, enjoy a wide selection of sushi, sashimi as well as cooked dishes and desserts. There are monthly promotion menus such as Chef’s Recommendation and Japanese festival set meals.",
     "url": "http://www.res.com.sg"
   },
   {
+    "id": 17,
     "name": "La Boca – Latino Bar",
     "address": "Lot C3.10.03, Level 3, Connection",
     "description": "Discover the dazzling flavours and vibrant cultures of Central & South America at “LA BOCA” Latino Bar. There is only ONE La Boca Latino Bar. We are an authentic Latin American Restaurant & Bar famed for our friendly atmosphere, authentic Latino food & beverage, awesome latin music, personalized service (handsome waiters) and great parties. Our genuine South American atmosphere creates the ideal environment for special occasions and celebration parties.",
     "url": "http://www.facebook.com/LaBocaMalaysia"
   },
   {
+    "id": 18,
     "name": "Two Sons Bistro",
     "address": "Lot 6.44.00 & 6.45.00, Level 6",
     "description": "Two Sons Bistro offers diners a blend of Western and Asian cuisine in a sophisticated, rustic environment. Watch the talented chefs dish out their masterpieces from Two Sons Bistro’s open kitchen while you savour juicy steaks with its exciting array of accompaniments, or get your hands dirty dipping into our clams and mussels prepared in a variety of sauces.",
     "url": "https://www.twosonsbistro.com/"
   },
   {
+    "id": 19,
     "name": "Croissant Taiyaki",
     "address": "Lot 1.13.01, Level 1, Gourmet Emporium",
     "description": "The hottest “hybrid” premium dessert from Japan which created a storm in Bangkok, has finally landed in Malaysia!\nTaiyaki is a traditional Japanese fish-shaped cake that’s usually filled with red bean paste, but Croissant Taiyaki’s version comes with a buttery puff pastry to give it a croissant-like texture.\nWhile red bean is clearly the favourite, you may want to try the triple hybrid version which includes a scoop of matcha ice-cream, called Ice Taiyaki!\nAvailable in 6 flavours, all Croissant Taiyaki’s products are pork-free.\nAt an affordable price starting from RM6.50, go ahead and start snacking – you may end up ordering the world-famous Gindaco piping hot takoyaki just next doors too!",
     "url": "https://www.facebook.com/mycroissanttaiyaki/"
   },
   {
+    "id": 20,
     "name": "Hokkaido Ramen Santouka",
     "address": "Lot 6.24.03, Level 6, Tokyo Street",
     "description": "Hokkaido Ramen Santouka was established in 1988 in Asahikawa, Hokkaido. Santouka founder – Hitoshi Hatanaka wanted to develop a classic ramen for all to enjoy, made with a simple soup that could be savored to the last, spoonful and topped with a fabulous char-siu pork. In essence, a masterfully assembled ramen whose superior ingredients and magnificient, robust flavor would truly stand out and long-lasting.\n\nPavilion Junior Privilege:Free ice cream with any purchase of regular ramen or ramen set(Click for more info)",
     "url": "https://www.facebook.com/RamenSantoukaMalaysia/"
   },
   {
+    "id": 21,
     "name": "TAI ER Suancai & Fish",
     "address": "Lot 6.12.00, Level 6",
     "description": "Tai Er is a Chinese restaurant chain specialising in suan cai yu, aka sauerkraut fish, with over 400 outlets in its native China.\nOpening its first Malaysia branch in Pavilion Kuala Lumpur, Tai Er is well-known for its signature soupy sauerkraut fish, which is served in different sizes ranging from an individual portion to a gigantic platter known as the Feaster. The spicy mala soup is loaded with Sichuan peppercorns, dried chillies, sauerkraut, filleted tilapia and a sprinkling of chrysanthemum petals for extra drama.",
     "url": null
   },
   {
+    "id": 22,
     "name": "Zok Noodle House",
     "address": "Lot 1.02.00, Level 1, Gourmet Emporium",
     "description": "Zok Noodle House was established in 2011 by a group of four buddies.\n\nThey are both ambitious and keen to create an epicurean authentic HK & Macau gourmet experience with the combination of their house’s recipe.\n\nZok Noodle House endeavors to prepare foods with the best available ingredients which also the meaning of “Zok” in Chinese.\n\nSignature dumpling noodles are something that you should never miss.\n",
     "url": "https://zoknoodlehouse.com.my/"
   },
   {
+    "id": 23,
     "name": "Al-Amar Lebanese Cuisine",
     "address": "Lot 6.10.00, Level 6",
     "description": "Experience the exquisite taste of the Middle East in Al-Amar Lebanese Cuisine. Al-Amar, ’the moon’ in Arabic, provides a relaxed city-chic atmosphere during the day, and turns romantic with warm mood lighting at night. Expect to enjoy immaculately-prepared authentic Lebanese cuisine as you take in the vibrant view of the busy shopping district from its stylish terrace. Al-Amar’s team of highly experienced Lebanese chefs promise delight at the first culinary bite and all throughout your dining escape with them. With some of the freshest ingredients flown in from Lebanon, Al-Amar prides itself on serving some of the finest cuisine available in this city.\nPavilion Lifestyle, Priority, and Luxe:Enjoy 10% off the total bill.(Click here for more information)\nTourist Privileges: Enjoy 10% off the total bill.(Click here for more information.)",
     "url": "https://www.facebook.com/AlAmarLebaneseCuisine"
   },
   {
+    "id": 24,
     "name": "Kampachi",
     "address": "Lot 6.09.00, Level 6",
     "description": "Exquisite Japanese cuisine presented as an art form.\nThe freshest fish – all air-flown directly from Tokyo and Osaka fish market weekly are delicately laid on ice bed.\nSavour tantalising sashimi and other delectable spread at Kampachi.\n",
     "url": "http://www.kampachi.com.my/"
   },
   {
+    "id": 25,
     "name": "Yolé",
     "address": "Lot 1.05.01, Level 1, Gourmet Emporium",
     "description": "Yolé, the first NO SUGAR ADDED frozen yogurt and ice cream from Spain which has less calories, fats and sugar than any other brand in the ice cream market. With the use of premium natural ingredients, we have created rich, full-flavored ice cream without adding any sugar. After thousands of hours’ worth of the expert research, we were able to use Spain’s finest ingredients to develop a unique recipe for the perfect ice-cream, full of taste, no sugar added.\nFor Yolé, quality is always their top priority on creating great tasting frozen yogurt and ice cream recipes that you’ll be able to enjoy more often and keep your waistline in check at the same time. Life is better with healthy delicious frozen yogurt and ice cream to fill yourself with more momentary joy which is harmless in almost every aspect.",
     "url": "https://yole.com.my/"
   },
   {
+    "id": 26,
     "name": "Grandmama’s",
     "address": "Lot 6.01.02, P6.01.00 & P6.02.00, Level 6",
     "description": "The Grandmama’s at Pavilion is one of the restaurants in the mall for the local as well as tourists. They serve signature local cuisines such as nasi lemak, nasi ayam istimewa, fried kueh teow, curry fish head, hakka fried rice and etc. The choice of food is Malaysian local cuisine depict of multi races country.\nThe naming of Grandmama’s brought back the memories of our grandma used to cook the food in its more authentic presence. In Grandmama’s food is still authentic but dining experience has been uplifted.",
     "url": "http://grandmamas.com.my/"
   },
   {
+    "id": 27,
     "name": "Weissbrau",
     "address": "Lot 3.05.02 & C3.16.00, Level 3, Connection",
     "description": "Weissbrau provides everything from pork knuckles and ribs to cold cuts and sausages galore – a German Bistro with a very casual atmosphere in a semi-open air space. They have a variety of beer on tap like Carlsberg, Hoegaarden, Franziskaner and Leffe Blonde, and also bottled beer like Paulaner, Lowenbrau, Becks, Konid Ludwig and Grolsch.",
     "url": "http://www.weissbrau.com.my/home/"
   },
   {
+    "id": 28,
     "name": "Ho Min San",
     "address": "Lot.1.52.00-1.53.00, Level 1, Gourmet Emporium",
     "description": "Ho Min San is a noodles restaurant that is exclusively presented to meet the contemporary food cultures and preferences of customers by serving the authentic noodles imported from China and a variety of traditional, authentic dishes of Yunnan and Sichuan. They aim to provide exquisite products, thoughtful services and comfortable atmosphere to create the sensation of “creative fusion noodles”.\nCheck out our ‘#DinnerDateDestination featuring Ho Min San’ feature here.",
     "url": null
   },
   {
+    "id": 29,
     "name": "Vanilla Mille Crepe",
     "address": "Lot. P6.08.00, Level 6",
     "description": "Vanilla Mille Crepe serves famous Paris-based Mille Crepes in a charming garden-like setting.",
     "url": null
   },
   {
+    "id": 30,
     "name": "CHICHA San Chen",
     "address": "Lot 6.01.01, Level 6",
     "description": "An award-winning bubble tea brand that uses only the best ingredients and tea brewing techniques of the highest standard, CHICHA SanChen makes accessible and modernizes the tea-drinking experience that satisfies the desire for both traditional and bubble tea.",
     "url": "https://www.chichasanchen.com.my/"
   },
   {
+    "id": 31,
     "name": "D Empire",
     "address": "Lot 6.33.00, Level 6",
     "description": "Authentic European cuisine right in the heart of KL’s Golden Triangle. Their chef has over 20 years experience overseas and over 4 years in Malaysia. He puts all his knowledge and heart into preparing each and every meal from the wide selection of European meaty and seafood dishes along with delicious desserts to excite everyone’s taste buds. The chef always makes sure that every dish is served at its finest whether by buying imported dairy or selecting the freshiest ingredients and by prepairing his own made sauces. They belief that good ingredients make good food. That’s why they are so focus on selecting the fresh and quality ingredients. All their seafoods are freshly imported from Europe country.",
     "url": "https://www.facebook.com/dempirepavilion/"
   },
   {
+    "id": 32,
     "name": "Baskin 31 Robbins",
     "address": "Lot 6.03.00 & 6.04.00, Level 6",
     "description": "As a leader in flavor innovation, Baskin Robbins offers over 1,000 flavors of ice cream, including sugar free, fat free and light. Its menu also includes frozen yogurt, sorbets, sherbets, beverages, ice cream cakes, sundaes and hand-packed for every occasion. Baskin Robbins intend to stay ‘Malaysian’s Favorite Premium Ice Cream’ in every way.",
     "url": "http://www.baskinrobbins.com.my"
   },
   {
+    "id": 33,
     "name": "Pizza Hut",
     "address": "Lot 1.100.00, 1.101.00 & S1.101.00, Level 1, Pavilion Elite",
     "description": "At Pizza Hut, be ready to choose a line of different flavours pizza. Featuring a delicious mix of nutritious Italian-American cuisine that includes the world’s favourite pan pizza and other delectable dishes, Pizza Hut never stops at exploring more flavours to cater to the masses. Pull your cheese up high and enjoy the pan hot pizza!",
     "url": "http://www.pizzahut.com.my"
   },
   {
+    "id": 34,
     "name": "Madam Kwan’s",
     "address": "Lot 1.16.00, Level 1, Gourmet Emporium",
     "description": "Famous for its’ Nasi Lemak, Madam Kwan’s is one of the must-try restaurants in town. The restaurant brings out the Malaysian’s flavors by serving a fusion of local dishes. Dine in and enjoy the rich fragrant of sambal, Asam Laksa and Curry Laksa Mee. Madam Kwan’s gives a satisfying Malaysian dining experience to all.\nPavilion Lifestyle, Priority, and Luxe Privilege:Enjoy complimentary Sago Melaka when dine-in.(Click for more info)\nTourist Privileges: Free Sago Gula Melaka(Click here for more)\n*Terms and conditions apply",
     "url": "http://www.madamkwans.com.my/"
   },
   {
+    "id": 35,
     "name": "Kenangan Coffee",
     "address": "Lot P1.05.00, Level 1, Gourmet Emporium",
     "description": "Kenangan Coffee is the first newretail F&B Unicorn in Southeast Asia. As the fastest growing grab-and-gocoffee chain with more than 800 stores in Indonesia, Kenangan Coffee is knownfor the signature Kenangan Latte and Kenangan Blend coffee beans. They alsooffer tea, chocolate, and a wide variety of food menu items.",
     "url": "https://www.kenangancoffee.my/"
   },
   {
+    "id": 36,
     "name": "Melvados",
     "address": "Lot P1.23.00, Level 1",
     "description": "Melvados was built to meet the rising needs of food-loving Malaysian residents who are too busy to whip up a gourmet meal for themselves. 100% made in Malaysia, its our own passion for food that led us to create a host of ready to eat meals and delicious desserts perfect for hectic days at work, to feed busy school children, for dinner parties, potlucks and even BBQs. Fully cooked, all our products simply require heating for instant gratification! We are Halal certified.",
     "url": "https://melvados.com.my"
   },
   {
+    "id": 37,
     "name": "Okonomi by Tokyo Don",
     "address": "Lot 6.24.1C, Level 6, Tokyo Street",
     "description": "An informal restaurant evoking the vibrant atmosphere and casual vibes of downtown Tokyo. House specials by resident teppan specialist and chef Takeshi Wada include okonomiyaki, yakiniku, yakisoba, teppan set meals and multi-course meals amongst others.\n",
     "url": "https://m.facebook.com/Okonomi.pavilion/"
   },
   {
+    "id": 38,
     "name": "Canton Court",
     "address": "Level 1, Level 2 & Level 3, Couture Pavilion",
     "description": "Canton Court redefines Cantonese fine dining as a premier culinary destination, seamlessly merging authentic flavours withmodern sophistication. Savour exquisite cuisine, expertly crafted by our chef with precision and artistry, in an elegantambiance complemented by impeccable service.\n",
     "url": null
   },
   {
+    "id": 39,
     "name": "LAC Nutrition For Life",
     "address": "Lot 1.06.00, Level 1",
     "description": "LAC, short for Leader in Anti-oxidative Control, is a leading health and wellness supplement brand with a global presence.\nIn 1997, the world began realising how critical antioxidants are for good health. LAC was then born to fill that market’s need for the most powerful antioxidant.\nSince its founding, LAC has embarked on a pioneering journey to develop scientifically based formulas, harnessing the best of eastern wisdom and western technology to neutralise free radicals, combat ageing brought forth by oxidative stress, and support you daily in looking, feeling, and functioning at your best.\nToday, LAC has over 100 nutraceutical products focusing on the 5 fundamentals – Beauty, Anti-ageing, Immunity, Energy, and Weight Management – bringing consumers unparalleled solutions for their everyday health and wellness.",
     "url": "https://www.lacworldwide.com.my/"
   },
   {
+    "id": 40,
     "name": "Geo Wine Nat",
     "address": "Lot P9.100.00, 9.103.01, E9.103.1 & 9.103.02, Level 9, Pavilion Elite",
     "description": "A great place for after work drinks, with a fine selection of wines, liquor and beer on tap, paired with a delicious made-from-scratch food menu. Live performances liven up the atmosphere making this a great pit-stop.",
     "url": "https://www.facebook.com/geowinenation/"
   },
   {
+    "id": 41,
     "name": "Semangkuk Mi Tarik Lanzhou Lamian China",
     "address": "Lot 1.60.00 - 1.66.00, Level 1, Gourmet Emporium",
     "description": "Savour the authentic flavors of China at Semangkuk Mi Tarik Lanzhou Lamian—a Chinese Muslim restaurant where hand-pulled noodles are crafted with precision, offering a delectable journey through Lanzhou’s culinary heritage.",
     "url": null
   },
   {
+    "id": 42,
     "name": "Dolly Dim Sum",
     "address": "Lot 1.102.00 & S1.102.00, Level 1, Pavilion Elite",
     "description": "Dolly Dim Sum is our modern interpretation of a traditional Chinese teahouse. It is a contemporary dim sum house that offers an all-day grazing experience of authentic Cantonese-style dim sum.\nDim sum literally means “”to touch the heart””; and to us, dim sum is an art form – each piece is delicate and exquisite, much like a “”dolly””.\n",
     "url": null
   },
   {
+    "id": 43,
     "name": "RedTail",
     "address": "Lot C3.06.00, Level 3, Connection",
     "description": "Offering the perfect setting for pre-club drinks and group celebrations, RedTail boasts exciting features including a Beer bar, Tiki bar, and light meals and snacks.",
     "url": null
   },
   {
+    "id": 44,
     "name": "HWC Coffee",
     "address": "Lot P6.06.00, Level 6",
     "description": "The story of HWC Coffee began in 2016, when an enthusiastic coffee cupper, a green coffee buyer and roasters jointly established the company. During the year, they managed to set up three retail stores and a roasting factory, enabling them to have full control of product development.\nTo ensure customers could enjoy a cup of high-quality specialty coffee, the company imposes a stringent process from bean cultivation, roasting quality, to the cupping. HWC Coffee hopes coffee could serve as a medium to connect people with nature, thereby reflecting the real coffee value and coffee economics (coffenomics).\nCoffee is shareable with everyone that enables us to embrace happiness.",
     "url": "https://www.hwccoffee.my/"
   },
   {
+    "id": 45,
     "name": "Right Side",
     "address": "P1.11.01, Gourmet Emporium, Level 1",
     "description": "BURGER, TACOS, MILKSHAKES, WRAPS, NUGGETS & SOFT SERVE ICE CREAM\n100% PLANT MADE & TASTY!",
     "url": null
   },
   {
+    "id": 46,
     "name": "Tom&Danny Coffee",
     "address": "Lot 6.35.00, Level 6",
     "description": "Tom&Danny is a coffee shop created by founder Tom and Darren together. Tom&Danny hopes to provide quality and tasteful coffee. Let coffee culture permeate people’s lifestyles, with the ultimate pursuit of innovation and quality of life, and continue to explore the unlimited possibilities of coffee and lifestyle. Of course, Tom&Danny not only does in-depth research on coffee, but they are also constantly innovating on food and catering to the needs of the market. Let people not only enjoy good coffee but also have a good food mix.",
     "url": "https://tomndanny.com/"
   },
   {
+    "id": 47,
     "name": "illy Caffè",
     "address": "Lot C3.10.1B, Level 3, Connection",
     "description": "illy Caffè, a well-known Italian coffee brand established in 1933, is located in The Pavilion KL Mall, one of Kuala Lumpur’s top shopping destinations. Its contemporary and chic design creates an inviting ambiance where customers can unwind and relax. illy Caffè’s skilled baristas are always ready to cater to your coffee preferences, ensuring you receive a perfect cup every time. They even provide a meeting room for your professional requirements.\nilly Caffè offers various coffee blends, which are made from high-quality coffee beans sourced from top coffee-growing regions worldwide. Customers can also select from a range of food options such as sandwiches, pastries, and cakes that complement the coffee experience.\nAside from its exceptional coffee and food selection, illy Caffè also retails a variety of coffee machines and accessories for customers to enjoy the Illy coffee experience at home. Whether you’re a coffee lover or simply seeking a venue to enjoy a fantastic cup of coffee, illy Caffè at The Pavilion KL Mall is an ideal choice.\nPavilion Lifestyle, Priority, Luxe:Enjoy all-day 25% off on Coffee.(Click here for more)\n\n",
     "url": "https://illy.my/locations/"
   },
   {
+    "id": 48,
     "name": "Rocku Yakiniku",
     "address": "Lot 7.01.03, Level 7, Dining Loft",
     "description": "ROCKU Yakiniku is a casual, yet edgy Japanese BBQ buffet restaurant, infused with live modern entertainment – delivering a brand new concept of “restaurantainment” to Malaysia. Guests can savour the classic Japanese Yakiniku (BBQ) culinary style in a smoke-free charcoal grill experience while enjoying live music performances and various unique entertainment such as magic shows and game shows.\n",
     "url": "https://rocku.com.my/"
   },
   {
+    "id": 49,
     "name": "Xiangshan Fish Steamboat",
     "address": "Lot 7.01.07, Level 7",
     "description": "Xiangshan Fish Steamboat is a unique culinary experience, slow-simmered in traditional wooden barrels with fresh fish, heated stones, green pepper, and a medley of aromatic ingredients, creating a rich and flavourful broth.",
     "url": "https://www.facebook.com/mtysteamboat/"
   },
   {
+    "id": 50,
     "name": "Nyonya Colors",
     "address": "Lot 1.09.00, Level 1",
     "description": "Nyonya Colors specializes in premium homemade quality Nyonya Kueh and delights. It aims to provide customers with the highest quality and tasty Nyonya Kueh. Almost all the Nyonya Kueh, desserts and meals are produced in the central kitchen to achieve consistency in taste and good quality control. Only the best and freshest ingredients are used to make the products.",
     "url": null
   },
   {
+    "id": 51,
     "name": "% Arabica",
     "address": "Lot 3.08.02 & E3.08.02, Level 3, Connection",
     "description": "% Arabica first store in Malaysia is here at Pavilion Kuala Lumpur. The store is equipped with our signature roasting machine, which you can select beans, quantity, and the roasting level, and the store will custom roast to each order so that you can bring home the freshest coffee in town.",
     "url": "https://arabica.coffee/"
   },
   {
+    "id": 52,
     "name": "myEureka Snack",
     "address": "Lot P6.15.00, Level 6, Tokyo Street",
     "description": "Each Eureka popcorn flavor has undergone intensive research before they are sold in the market. Eureka keeps a high-quality of control to bring you the best from the ingredients. Eureka Snack Bar have tailored recipes to suit to your taste buds and at the same time, give you a burst of flavor each time you have one of their popcorns.",
     "url": "https://eurekasnack.com/"
   },
   {
+    "id": 53,
     "name": "Ippudo",
     "address": "Lot C4.07.00, Level 4, Connection",
     "description": "The renowned Japanese Ramen chain is now in Malaysia!\nIppudo’s signature tonkotsu ramen soup is free of the usual smell of pork with a light aftertaste. The selection of ingredients and the seasoning suited to the customer’s well-being has won over female customers tempting them to want to try it everyday. Ippudo was also the first to refer to broth by color, Shiro (white) and Aka (red), which soon became a standard industry practice. Till today, Shiromaru and Akamaru continue to helm as Ippudo’s signature ramen.\n\nPavilion Junior Privilege:Receive a complimentary Kid’s Meal add-on with any Kid’s Meal main order.(Click for more info)",
     "url": "http://www.ippudo.com.my"
   },
   {
+    "id": 54,
     "name": "Daily Kopitiam",
     "address": "Lot 4.02.03 & 4.02.04, Level 4, Connection",
     "description": "Reminiscent the good old days at Daily Kopitiam. Savour their traditional kopitiam menu such as prawn noodles, nasi lemak, curry mee or freshly-baked egg tarts along with a cup of coffee or tea.",
     "url": null
   },
   {
+    "id": 55,
     "name": "RasaNya Steamboat",
     "address": "Lot 8.105.00, Level 8 Pavilion Elite",
     "description": "Recalling the vibrant days of the Peranakans – a cultural hotpot swirling with Chinese, Malay, and Western heritage. Woven in the centre of this rich heritage is Nya, who binds her family through a deep love: expressed in humble yet intricate cooking.\nClickHEREto view the menu.",
     "url": "https://www.rasanya.my/"
   },
   {
+    "id": 56,
     "name": "Hansang",
     "address": "Lot 8.100.00 & S8.100.01, Level 8, Pavilion Elite",
     "description": "Best of the best Hansang.\nconfidence  customer satisfaction.\nWe are seeking  a new style never done before!\nThere are not only taste & shape but  in Hansang.\nPremium Gimbap!\nOne roll of premium Gimbap contains all required nutrients of one day of modern people.\n",
     "url": "http://hansangkorea.com/"
   },
   {
+    "id": 57,
     "name": "Shuyi",
     "address": "TL 1.111.00, Level 1, Pavilion Elite",
     "description": "Drinks that are nutritious and delicious, made with high-quality ingredients. The perfect choice when you want something sweet and refreshing.",
     "url": "https://shuyi.ca/home"
   },
   {
+    "id": 58,
     "name": "Dai Cha Dim",
     "address": "Lot 6.01.03, Level 6",
     "description": "Serving a delicious variety of cha-chaan-teng delights, you’ll find many scrumptious comfort food such as BBQ meat noodles , dimsum, plated rice, , double boiler soup, desserts , bottled milk tea and more. The perfect place for a fuss-free taste of crazy rich flavours! (non halal)\n",
     "url": null
   },
   {
+    "id": 59,
     "name": "Al Halabi Express",
     "address": "P1.11.03, Level 1, Gourmet Emporium",
     "description": "Al Halabi Express provides authentic Arabic and Middle Eastern food selections to satisfy all your senses. They serve a variety of kebabs or biryani rice done the Middle Eastern way, steamed with herbs and spices to ensure a flavourful tasty meal for their customers.",
     "url": "https://www.facebook.com/profile.php?id=100063491413622"
   },
   {
+    "id": 60,
     "name": "The Chicken Rice Shop",
     "address": "Lot 1.104.00 & E1.104.0, Level 1",
     "description": "The Chicken Rice Shop serves traditionally preparedsteamed, roasted, honey barbecued and soy sauce chicken as its signaturedishes. These signature dishes are served with fluffy chicken flavoured ricecooked to perfection from a recipe passed down through the generations,originating from Hainan Island.\nThe tagline “Chicken Rice and More…” serves as the commitment to guests in offering a wide variety of local favouritesincluding noodle dishes, curries, Special Penang Chai Boay (Spicy MixedVegetables), Nyonya Assam Fish and Kerabu Mango, as as well as appetizers suchas Famous Stuffed Fishball, Penang Rojak and Gado-Gado.\n",
     "url": "https://www.thechickenriceshop.com/"
   },
   {
+    "id": 61,
     "name": "Matcha Hero Kyoto",
     "address": "Lot P6.16.00, Level 6, Tokyo Street",
     "description": "Taste the richness of Japanese green tea ice cream and drinks made from Marukyu Koyamaen Green Tea.\n\nPavilion Junior Privilege:Add-on ice cream for only RM1 (Matcha, Houjicha or Matcha & Houjicha flavours)(Click for more info)",
     "url": "https://www.facebook.com/matchaherokyoto/"
   },
   {
+    "id": 62,
     "name": "Ralph’s Coffee",
     "address": "Lot. 3.55.00 & 3.56.00, Level 3",
     "description": "Ralph’s Coffee represents the timeless American spirit of the Ralph Lauren brand. Custom blends crafted from the world’s finest organic coffee beans. Ralph’s special blends, including Ralph’s Roast, Decaf, and Espresso, feature organically grown beans from Central and South America and Africa.",
     "url": "https://www.ralphlauren.com.my/content-features/brand-navigation-categories/ralphs-coffee/ralphs-coffee"
   },
   {
+    "id": 63,
     "name": "Food Place",
     "address": "Lot 1.29.01-1.29.04, Level 1",
     "description": "Situated in Pavilion Kuala Lumpur, 8 Avenue offers non-halallocal delicacies and tasty dishes from international cuisine. 8 Avenue also creates unforgettable dining experiences with friendly service at competitive prices.\nNo need to search around for the classic local dishes anymore, 8 Avenue atPavilion KL offers you the chance to savor the taste of the golden oldies ofthe best local favourites and international cuisine, all under one roof. 17 ofthe eateries’ renowned brands such as Petaling Street Hokkien Mee, Kee Mei SiewPow, Min Bak Kut Teh Authentic from Klang, Tang Jia Roast, Lucky Fountain, OJATropical Island Drink, Old Master Q Beef Noodle, Fullbud Taiwanese Cuisine, HupKee Claypot & Hotplate, Wonder Soup, KimHot Dumpling, Wei Hong Ipoh HorFun, Li Ji Lala Noodle, Yong Tau Fu, Kenko Life, Sedap Syok and Kepong AhGoGoCurry Fish Head.\nDon’t miss out on this one-of-a-kind gastronomic adventure!",
     "url": "https://www.instagram.com/8avenuemy/"
   },
   {
+    "id": 64,
     "name": "Godiva",
     "address": "Lot P2.15.00, Level 2",
     "description": "Engage all your senses with the wonder of chocolate!\nSavour fine chocolate at Godiva as it brings you a range of refined flavors with Rich, crispy biscuits, hot cocoa, and gourmet coffee from Godiva can be a most satisfying after-dinner experience or a special indulgence with friends.\n\nPavilion Lifestyle, Priority, Luxe:Enjoy a complimentary Godiva soft serve with purchase of RM 250 in a single receipt.(Click for more info)– Year Long Privileges start 1/1/2023\n",
     "url": "http://www.godiva.com/"
   },
   {
+    "id": 65,
     "name": "Grand Imperial",
     "address": "Lot 6.39.00, Level 6",
     "description": "Established since 2008, Grand Imperial is Malaysia’s leading company in the food and beverage industry. Over the years, the restaurant has grown by leaps and bounds, and is now a household name synonymous with exquisite culinary offerings and excellent ambience and other food-related products and services.\nThe company showcases a fleet of outstanding restaurants offering various culinary experiences, from Chinese delicacies to Chinese Dim Sum, BBQ, Seafood Steamboat, Hong Kong noodles, and tangy fresh seafood.\nGrand Imperial’s latest restaurant here at Pavilion KL offers comfortable and spacious seating in a modern setting, perfect for family meals and banquets. Equipped with a big LED screen on stage, the couples can expect a romantic 5-star exclusive wedding experience here at Pavilion KL.\nOperation Hours:\n11:30am – 3:00pm, 6:00pm – 10:30pm (Monday-Saturday)10:00am – 3:00pm, 6:00pm – 10:30pm (Sunday)",
     "url": "https://www.grandimperial.com.my/"
   },
   {
+    "id": 66,
     "name": "Pao Xiang Bah Kut Teh",
     "address": "Lot C4.01.00, Level 4, Connection",
     "description": "Bak Kut Teh – the name literally translates as ’meat bone tea’, consisting of meaty pork ribs simmered in a complex broth of herbs and spices (including star anise, cinnamon, cloves, dang gui, fennel seeds and garlic) for hours. Pao Xiang Bak Kut Teh brings in the full flavours to warm your tummy with additional ingredients such as offal, varieties of mushroom and pieces of dried tofu or fried tofu puffs. Dine in with your family and friends is the best way to enjoy a pot of hot hearty meal.\n",
     "url": "http://www.paoxiangbkt.com/"
   },
   {
+    "id": 67,
     "name": "Celadon Royal Thai Cuisine",
     "address": "Lot 6.37.00, Level 6",
     "description": "Keeping traditions alive at Celadon Royal Thai Restaurant, indulge in this space filled with ancient Thai artifacts, complimented with true Thai cuisine, brilliantly prepared by experienced Thai chefs. Try the popular Green Curry, Tom Yam and other Thai specialties.\n",
     "url": "http://www.seacuisine.com.my/"
   },
   {
+    "id": 68,
     "name": "Ichi Zen Japanese Restaurant",
     "address": "Lot 6.24.1B, Level 6, Tokyo Street",
     "description": "Ichi Zen, founded by Edo Ichi Group of Restaurants, contains two underlying concepts under its name, one being the heritage of ancient Edo period’s value towards food, and the other is the connotation of the name that literally meant ‘Edo Period’s number one meal’ in Japanese.\nAbiding Edo Ichi’s brand qualities, Ichi Zen successfully transcended both the orthodox and innovation of Edo cuisine into a unique food approach composed of the purest ingredients. A long list of dishes comes with their menu, including made to order Sushi and custom pork dish which will freshen up your tongue while being served like an honorable.\nTourist Privileges:10% off normal-priced items*(Click for more info)\n*Terms and conditions apply.\n",
     "url": "http://www.edoichigroup.com/"
   },
   {
+    "id": 69,
     "name": "llaollao",
     "address": "Lot 3.07.02 & E3.07.02, Level 3, Connection",
     "description": "Enjoy the llaollao experience with the most delicious toppings, all the sauces you can imagine and the freshest and most nutritious fruit. And cool off with the healthiest frozen yogurt.",
     "url": "https://www.facebook.com/llaollaoMalaysia/"
   },
   {
+    "id": 70,
     "name": "Aori Ramen",
     "address": "Lot 6.36.00, Level 6",
     "description": "Unwind at Aori Ramen—a sanctuary designed with modern simplicity and relaxation at its core. Our zen and airy ambiance offers the ideal setting to savour the art of ramen perfection.\nFrom the first sip to the last slurp, our flavorful broths are an integral part of the Aori Ramen experience. Our chefs pour countless hours into crafting our broths, unveiling a flavor profile that’s rich, nuanced, and utterly delightful. More than just a base, these broths are crafted for sipping and savoring, allowing you to experience the full spectrum of flavors.",
     "url": "https://www.instagram.com/aoriramen_malaysia/"
   },
   {
+    "id": 71,
     "name": "Quivo",
     "address": "Lot 3.09.02, Level 3, Connection",
     "description": "Quivo has a style and attitude for all and appeals to all five senses.\nQuivo allows you to be yourself and hopes to brighten your day. Embodying a Mediterranean lifestyle concept, every dish at Quivo is made with carefully sourced ingredients. Cooked authentically using only the finest ingredients, Quivo stays true to its traditional fundamentals. Olive oil that tastes of the Mediterranean, salt that is freshly packed, and coffee that is a unique home blend. With a focus on creative drinks and great wines, our mixologists have concocted cocktails to be enjoyed alone or complimentary to our menu. We specialise in food and drinks that will delight your palate. Quivo is a one-stop shop for customers, whether you are a KL-ite and a resident or a visitor staying in the area. It’s a place to relax.\nPavilion Lifestyle, Priority, Luxe:Enjoy 10% off a la carte menu.(Click for more info)– Year Long Privileges start 1/1/2023\n",
     "url": "http://www.quivo.my"
   },
   {
+    "id": 72,
     "name": "Suki-ya",
     "address": "Lot 6.24.04, Level 6, Tokyo Street",
     "description": "This “House of Hot Pot” is designed to offer heart-warming dining experiences at equally endearing prices. Diners enjoy unlimited, top-quality Australian chilled beef and farmed chicken that are oh-so-delicious in their own right. Another highlight of Suki-Ya is its vegetable bar featuring a wide variety of fresh vegetables to round up the meal with a healthy touch. Along with sumptuous soups and broths, dining at Suki-Ya is bound to perk up everyone’s taste buds. One of the latest brand new eatery launched by Creative Eateries! Sukiya or “House of hot pot” is designed to offer a fun and unpretentious dining experience.\n",
     "url": "http://www.suki-ya.com/"
   },
   {
+    "id": 73,
     "name": "Taimal Herbs & Medicine",
     "address": "Lot 1.11.00, Level 1, Gourmet Emporium",
     "description": "We offer the best quality of Chinese herbs and medicine at a reasonable price. Check out our stores today!",
     "url": "http://paviliontaimal.etcm.me/"
   },
   {
+    "id": 74,
     "name": "Jordan Hong Kong Restaurant",
     "address": "1.107.00, Level 1, Pavilion Elite",
     "description": "Founded in 2020, Jordan Hong Kong Restaurant is a Hong Kong-style restaurant that not only serves authentic traditional Hong Kong-style cuisine but is also committed to combining tradition and innovation. They aim to develop special dishes based on the traditional Hong Kong restaurant culture and basis. And all of this is brought to their customers by the Hong Kong-style restaurant chefs with 25 years of experience who use professional and custom culinary art to create various types of unique Hong Kong-style cuisine of personal ingenuity.",
     "url": "https://www.jordanhkrestaurant.com"
   },
   {
+    "id": 75,
     "name": "Tokyo Teppan",
     "address": "Lot 6.24.02, Level 6, Tokyo Street",
     "description": "A sister restaurant of Tokyo Don, Tokyo Teppan specializes in teppanyaki. Whether it is the salmon teppanyaki, or the Angus beef teppanyaki, or mixture of dishes, customers will be pleased by the competently prepared meal.\n",
     "url": "https://www.facebook.com/tokyoteppanpavilion/"
   },
   {
+    "id": 76,
     "name": "Nando’s",
     "address": "Lot 1.105.00 & E1.105.0, Level 1, Pavilion Elite",
     "description": "Besides our legendary chicken, the one thing you’ll always find at Nando’s is a warm welcome that’ll make you feel right at home. And that’s not just because of our PERi-PERi!\nEach one of our restaurants has its own special design, but they all have earthy textures and colours that remind us of our sunny Afro-Portuguese roots and many feature original South African art and unique design touches. Cool Afro-Luso beats and friendly service add to the vibe, and then there’s the piece-de- resistance – our flame-grilled PERi-PERi chicken that’s served on beautiful crockery.\nIt makes for a sizzling experience and we can’t wait for you to join our table. Because if there’s one thing we love just as much as PERi-PERi, it’s big, happy gatherings!",
     "url": "http://nandos.com.my"
   },
   {
+    "id": 77,
     "name": "KFC",
     "address": "Lot 1.106.00 & S1.106.00, Level 1, Pavilion Elite",
     "description": "Great tasting chicken has become synonymous with KFC.\nThey serves finger lickin’ good, succulent pieces of chicken with flavourful blends of 11 herbs and spices give KFC’s delicious aroma. With the chicken’s natural juices sealed-in, leaving a special mouth-watering taste that cannot be replaced.",
     "url": null
   },
   {
+    "id": 78,
     "name": "Yun Nans",
     "address": "Lot 6.41.00 & 6.42.00, Level 6",
     "description": "YUNNANS is China’s largest casual restaurant chain with over 200 outlets. More than 1 million Signature Chicken Soup sold worldwide!",
     "url": null
   },
   {
+    "id": 79,
     "name": "Taco James",
     "address": "Lot 1.108.00, Level 1, Pavilion Elite",
     "description": "Taco James is a taco-based fast food restaurant. And they’re here to serve the best taco in town.\nTaco Tuesday? TACO JAMES every day!\n",
     "url": "https://www.facebook.com/Tacojamesmalaysia/?ref=page_internal"
   },
   {
+    "id": 80,
     "name": "The Barn",
     "address": "Lot C4.04.00, Level 4, Connection",
     "description": "A home for great wines and a smorgasbord of exquisite cuisine crafted to perfectly match your aperitifs, ambience and inner sense of gastronomic paradise.\n",
     "url": "http://www.thebarn.com.my/"
   },
   {
+    "id": 81,
     "name": "Putien",
     "address": "Lot 6.01.04, Level 6",
     "description": "The PUTIEN brand traces its roots to its namesake city of Putian – a beautiful coastal suburb in Fujian, with rich cultural history and storied tradition since its settlement over almost one and a half millennium ago. It is, after all, the birthplace of the goddess Mazu and the fabled Southern Shaolin Kungfu, among many other legendary tales.\nPUTIEN focused on providing lip-smacking good food . The savoury satisfaction of white hot, luscious Putien Lor Mee broth. Or the sweet-savoury delightful crunch of every piece of stir-fried Yam. Or how the prawns, scallops and fishes used in their creations still taste as sweet as the sea intended.",
     "url": "http://putien.com.my/"
   },
   {
+    "id": 82,
     "name": "The Coffee Academics",
     "address": "C3.02.00, Level 3, Connection",
     "description": "Since its inauguration in Hong Kong in 2012, The Coffee Academics has been setting the standards in coffee quality and exceptional coffee experiences. Taking specialty coffee culture to new heights in the region, the cafe has expanded our coffee hub to include Singapore, Thailand, Mainland China, Macau, Philippines, Japan and Qatar.",
     "url": "https://the-coffeeacademics.com/"
   },
   {
+    "id": 83,
     "name": "Tokyo Milk Cheese Factory",
     "address": "Lot P1.01.00, Level 1, Gourmet Emporium",
     "description": "Their concept of a “factory filled with creativity and innovation” was born in Japan in 2011. They wanted to create sweets that no one has ever made, using carefully selected milk and high quality cheese, combined with ingredients from not only Japan, but also around the world.\n\nFirst launched in Japan in 2016, Cow Cow Ice is literally their Crème de la crème. Made using premium ingredients such as authentic Jersey Milk, Cream cheese and Gouda cheese from Hokkaido, Cow Cow Ice’s smooth creaminess is a joy to behold.\n\nThere are a total of 3 flavors: Cow Cow Milk, Cow Cow Cheese and Cow Cow Twist (Milk & Cheese). The Signature Cow Cow Sundae (served in a cup) includes a slice of our Milk Cheesecake as well as a piece of Salt & Camembert cookie, completing the ultimate taste experience.\n\nVintage cheddar Waffle cone is also baked carefully one by one in the shop to ensure quality over quantity.",
     "url": "http://www.tokyomilkcheesemy.com/"
   },
   {
+    "id": 84,
     "name": "Calia",
     "address": "Lot 6.11.00 & E6.11.00, Level 6",
     "description": "Calia is a unique Australian restaurant-to-retail brand created in 2016 in Melbourne celebrating the finest in local Australian and international produce – both in the restaurant and in the adjoining retail marketplace.\nA balance of experience and excellence, Calia is driven by the pursuit of perfection for the modern gastronomist. At the heart of the brand, we believe that simplicity is the ultimate sophistication. We have captured the quintessence of nature’s nest in our selection of products, to delight even the most conscientious of palates.",
     "url": "https://my.calia.co/"
   },
   {
+    "id": 85,
     "name": "dipndip",
     "address": "Lot 7.103.01 & E7.102.00, Pavilion Elite",
     "description": "dipndip is the ultimate chocolate café. Using only the finest Belgian chocolate, they offer countless choices of dessert items and beverages that ranges from crêpes, to waffles, to traditional hot chocolate. Whether it is white, milk or dark, they have something for every chocolate lover.",
     "url": "http://www.dipndip.com/"
   },
   {
+    "id": 86,
     "name": "Warung Putera Puteri",
     "address": "C4.09.00, Level 4",
     "description": "Experience the heartwarming flavors of Malaysia in every bite, where our dishes are crafted to make you feel right at home.",
     "url": null
   },
   {
+    "id": 87,
     "name": "Venchi",
     "address": "Lot 3.06.02 & E3.06.02, Level 3, Connection",
     "description": "All delicious, healthy, natural, made with the best ingredients and the best intentions: to look on the bright side and to live a long happy life that, if nothing else, is a little bit sweeter.\nWith more than 140 years of history, today Venchi earned international recognition: with more than 350 chocolate recipes and 90 gelato flavours, is found in more than 70 countries in key cities like London, Hong Kong, Dubai and New York with the biggest chocolate waterfall of all time. On this journey towards international expansion, Venchi recently landed in Taiwan, Jakarta, Shanghai and Tokyo in the name of beauty, joy and conviviality, turning “Made in Italy” into “Experienced like in Italy” and exceeding 150 shops worldwide!\nPavilion Luxe:Enjoy 10% off normal-priced items.*(Click for more info)\n*Terms and conditions apply\nTourist Privilege:Enjoy 5% tourists discount.(Click for more info)\n*Discount is applicable only to full-priced items and does not include gelato",
     "url": "https://eu.venchi.com/"
   },
   {
+    "id": 88,
     "name": "Village Roast Duck",
     "address": "Lot 7.01.05, Level 7, Dining Loft",
     "description": "Village Roast Duck started in 2010, established itself as the place to go for succulent Peking Roast Duck, Crispy Duck, Char Siew (caramelized pork belly) and Siew Yuk.\nWe pride ourselves as the place for authentic Cantonese dishes. The use of high quality ingredients and condiments ensure each of our dishes is a treat.",
     "url": null
   },
   {
+    "id": 89,
     "name": "The Coffee Bean & Tea Leaf (Level 2)",
     "address": "P2.07.00, Level 2, Centre Court",
     "description": "Coffee Bean offers over 22 varieties of coffee and 20 kinds of tea. Its’ signature drink is the Original Ice Blend which are available in Mocha, Caramel, Hazelnut, etc. Coffee Bean’s dedication is to excellence and quality, promising a cup of great coffee. Enjoy the smooth creamy coffee and some pastries to satisfy the sweet tooth.\n",
     "url": "http://www.coffeebean.com.my"
   },
   {
+    "id": 90,
     "name": "Light Capture Café",
     "address": "Lot 1M.04.00, Level 1M",
     "description": "Light Capture Café is the perfect place to relax and enjoy a cup of coffee or tea with a pastry. Decorated in a warm and inviting style, with soft lighting and comfortable seating with outdoor patio, Light Capture Café at Pavilion KL is the second branch to open in KL.",
     "url": "https://www.instagram.com/lightcapture_pavillion.k.l/"
   },
   {
+    "id": 91,
     "name": "Koi Thé",
     "address": "Lot 1.59.00, Level 1, Gourmet Emporium",
     "description": "The story begins 25 years ago when the first 50 Lan store was established in Taiwan and grown into a market leader in delivering premium tea beverage.In 2006, from the same parentage as 50 Lan, KOI was founded to bring the success onto international platform with first overseas store in Singapore.Today KOI direct manages over 400 outlets in 12 countries, making tea-tasting a pleasant experience for everyone.",
     "url": "https://www.koithe.com"
   },
   {
+    "id": 92,
     "name": "J.CO Donuts & Coffee",
     "address": "Lot 1.05.00, Level 1, Gourmet Emporium",
     "description": "J.Co Donuts & Coffee offers a line of unique flavor donuts and beverages to customers like they’ve never tasted before.\nBest ingredients are used from all over the world such as Belgian Chocolates, Californian Almonds, Japanese Matcha Green Tea and Italian roasted coffee to give you the fine taste.\n",
     "url": "http://www.jcodonuts.com"
   },
   {
+    "id": 93,
     "name": "PAUL",
     "address": "Lot 2.09.02, E2.9.02 & P2.06.00, Level 2",
     "description": "PAUL, THE FRENCH BAKERY RESTAURANT\nPAUL is a 129 years French family business originates from Lille in North of France opened it’s first and only PAUL outlet in Malaysia at Pavilion KL. It aims to spread authentic PAUL french experience and gives you the opportunity to appreciate French culture and heritage through its French products (bread, crepes, sandwiches, macarons, pastries, coffee and more).\n1. Special Feature: PAUL Trio-cation\n\nBeing in PAUL, there are actually 3 different segments to choose from based on personal preference in terms of ambiance. First, is the main restaurant where the setting has an elegant Parisian feel with French music playing at the background. There is also a private room available for events that can accommodate up to 40 pax. To make reservations, call +603-2145 6000.\nThe second section is the Terrace for a casual bite. The final section is a kiosk made for take-away where you can select an array of tantalizing pastries, bread together with a hot cuppa on-the-go.\n2. Dessert Swig: Sugar Rush High\n\nFor the adventurous sweet-tooth, venture to a whole new world of ice blended drinks – The Macaron Frappé where macarons are blended together with vanilla cream, ice and milk to create a sinfully sweet and addictive concoction. You can also choose other macaron flavours such as chocolate, pistachio, coffee, vanilla or salted caramel.\n3. Cheesy Bite: Discover ‘Pain De Mie’\n\nOne of the most authentic Parisian Cafe dish – The Croque Monsieur is the perfect dish to really appreciate the house-baked ‘Pain De Mie’ which means soft bread.\nTurkey ham and French cheese – Emmental and Béchamel cheese, melted into a gooey surprise are baked together to create a melty cheesy savoury dish.\n4. Dainty Bite: 2 Bites Rule\n\nWe heard that Tartine dish is pretty rare in the French restaurant scene in Malaysia. At PAUL, savour the Tartine Beef, where freshly baked country bread is cut into ‘two bites’ pieces, topped with fragrant herbed cream cheese, sweet caramalised onion and juicy grilled sirloin steak with a dash of tangy balsamic glazing. The key of this dish is that it’s a great sharing appetizer that plays well with different food component textures.\n5. Fusion Bite: Why Not Pumpkin\n\nThere’s always that one person that has a different taste from the crowd. So, for those who want to savour a unique but low-key Parisian dish, here’s the Seafood Risotto. Risotto is usually cooked in a mushroom base but here the risotto prepared in a pumpkin base that brings out the natural sweetness of the pumpkin, it also has grilled king prawn, roasted salmon, squid, cherry tomatoes, sauteed mixed mushroom, parmesan cheese, and of course, the house-baked baguette crouton for that little Parisian touch.\n6. Crackling Bite: Caramelised Layers\n\nOne of the sweet favourite – The Millefeuille Strawberry a.k.a napoleon is where caramalised puff pastries ate layered with a thick creme patisserie filling and fresh strawberries. This dessert needs precision in measurements and preparation as it takes real skills to ace it, the main goal at the end of the day is to maintain the crunchiness of the pastry. It has a harmonious flavour that springs between sweet caramel and tangy strawberries, neutralised by the creme patisserie.\nAll pastries and bread are made fresh everyday using the finest French flour (a secret blend from PAUL’s recipe archives) and French butter which is the core of the dishes served.\n7. Tea Bite: XXXL Version\n\nThe macarons served in PAUL is slightly different than usual as the size is huge, almost 5 times bigger than usual, hinting a purpose to share, or not. The macarons are made from almond flour to have a light and nutty aftertaste as has filling that is much more thicker than the usual macarons. It has a richer and more dense texture and flavour that is deliciously chewier.\nPavilion Lifestyle and Priority:Enjoy 10% off with minimum purchase of RM100.(Click for more info)\nPavilion Luxe:Enjoy 15% off with minimum purchase of RM100.(Click for more info)\nT&Cs: Valid for takeaway and dine in only.",
     "url": "https://www.facebook.com/PAUL1889.Malaysia/"
   },
   {
+    "id": 94,
     "name": "Komugi",
     "address": "Lot 1.12.01 & 1.13.00, Level 1, Gourmet Emporium",
     "description": "Komugi (Halal) offers a variety of deliciously authentic products, from handmade Japanese bread to delightfuland delectablecakes and pastries.\nKomugi (Halal) offers a variety of deliciously authentic products, from handmade Japanese bread to delightfuland delectablecakes and pastries.\n",
     "url": "https://www.facebook.com/KomugiMalaysia/"
   },
   {
+    "id": 95,
     "name": "Auntie Anne’s",
     "address": "Lot P1.10.00, Level 1, Gourmet Emporium",
     "description": "Guaranteed to be a snacking pleasure, Auntie Anne’s, a famous American chain since 1988, serves products such as pretzels, dips, and beverages. The fresh, sweet taste coupled with a light, bread-like texture of the various flavored pretzel offers individuals a ’little reward’. Other than Stix and Pretzel Dogs, customers can choose from its core product lineup which includes Original, Cinnamon Sugar, Almond, Pepperoni, Sour Cream and Onion, Garlic Pretzels – also available in bite-size Pretzel Nuggets. Complemented with the brand’s famous lemonade, Auntie Anne’s is definitely the pit stop to make.\n\n",
     "url": "http://www.auntieannes.com.my/"
   },
   {
+    "id": 96,
     "name": "Bubu Kōbō",
     "address": "P6.14.00, Level 6, Tokyo Street",
     "description": "Dive into the world of “Bubu Kōbō” with our star attraction – the Japanese Mont Blanc Dessert.",
     "url": null
   },
   {
+    "id": 97,
     "name": "Al Halabi Gourmet Restaurant",
     "address": "Lot 7.01.06, Level 7, Dining Loft",
     "description": "Al Halabi Gourmet Restaurant is ideal for  dining as well as romantic dinners for two, with an inviting façade and nicely designed interior, vintage  and chandeliers with warm lighting, will truly exude the feel of an authentic Middle East vibe.\nMenu wise, you can look forward to an array of Arabic staples and gourmet foods. It’s predominantly Lebanese & Syrian dishes, and it’s fairly extensive. Meticulously made dishes are served perfectly in  platter. Founded by the great man behind the success of the famous Restaurant Tarbush, this new concept of gourmet restaurant guarantees a gastronomic twist of taste and a modern update on traditional Arabic cooking.\n\nPavilion Junior Privilege:10% off with purchase of RM100 in a single receipt.(Click for more info)",
     "url": "https://bit.ly/2GVZD9f"
   },
   {
+    "id": 98,
     "name": "Frost n Bites",
     "address": "Lot C3.13.00, Level 3, Connection",
     "description": "Frost N Bites started at the end of 2021 with a major rebranding with new flavours and toppings to boost to match its new theme. They have artisanal produced gelato, topped with a delicious variety of sauces, custom made biscuits, crumbles, and cream.Frost N Bites works hard to offer parlours and customers the very best produce with the constant search for increasingly innovative solutions and creativity.",
     "url": "http://www.frostnbites.com/"
   },
   {
+    "id": 99,
     "name": "TWG Tea",
     "address": "P2.16.00, 2.34.01 & 2.34.02, Level 2, Couture Pavilion",
     "description": "TWG Tea, the finest luxury tea brand in the world, offers more than 450 fine harvest teas from around the world as well as exclusive tea blends, vibrantly colourful packaged teas, an array of gifts sets for any occasion. The Boutique also offers TWG Tea-infused chocolate bons bons, chocolate bars and macarons. Enjoy and relax in the elegant adjoining TWG Tea Salon for breakfast, brunch, lunch, afternoon tea and dinner, where crisp white linens and fine bone china complement sweet and savoury tea-infused gastronomy.\nPavilion Luxe:Enjoy a complimentary 6 pieces of TWG tea macarons with a minimum spend of RM250 in a single receipt.(Click for more info)– Year Long Privileges start 1/1/2023\n",
     "url": "http://www.twgtea.com"
   },
   {
+    "id": 100,
     "name": "Snowflake",
     "address": "Lot P4.01.00 & E4.01.00, Level 4",
     "description": "Snowflake is the perfect place to grab some shaved ice, regardless of the weather! Inspired by traditional Taiwanese desserts, you have a whole menu of fun options made-to-order and they are all made special with fresh, natural ingredients. Choose from refreshing fruity or creamy shaved ice, to delectable matcha series or signature taroballs, there’s something for you to enjoy. Plan your next meet-up at Snowflake.",
     "url": "http://snowflake.com.my/"
   },
   {
+    "id": 101,
     "name": "Famous Amos",
     "address": "Lot P1.04.00, Level 1, Gourmet Emporium",
     "description": "Being the purveyor of freshly baked cookies, Famous Amos has been serving nation favourite cookies for more than 35 years and still counting. The ever-popular flavor among cookies fans is our Original Chocolate Chip cookies, other favorites such as Chocolate Chip Macadamia, Double Chocolate Chip Pecan, Chocolate Chip Pecan are freshly baked throughout the day in each of this Hot-baked store. By using the best ingredients, like semi-sweet chocolate chips and flavorful nuts, these homemade-tasting cookies became famous just by word of mouth. Famous Amos has also extended its product offerings to wide variety of chocolates, cookie gift packing and gift hampers which are well sought-after gifts for any occasion and social gathering.\nPavilion Lifestyle, Priority, Luxe:Receive one (1) complimentary Big Cookie (crunchy or chewy) or Muffin or Brownie with purchase of RM30 and above in a single receipt.(Click for more info)\nPavilion Junior:Receive one (1) complimentary Big Cookie (crunchy or chewy) or Muffin or Brownie with purchase of RM40 and above in a single receipt.(Click for more info)\nTourist Privilege:Free one (1) pc Big Cookie (crunchy or chewy)/ Muffin/Brownie with a minimum purchase of RM30 & above in a single receipt.(Click for more info)\n*Promotion valid until 31st December 2025\n*Promotion valid at Famous Amos Pavilion KL & Pavilion Bukit Jalil only.\n*Free item is subject to the stock availability of the day.\n*While stocks last.\n*Not valid with other on-going promotions, offers and discounts.\n*Famous Amos reserves the right to amend any of the terms & conditions stated above without prior notice.\n\n\n",
     "url": "https://www.famousamos.com.my"
   },
   {
+    "id": 102,
     "name": "Paris Baguette",
     "address": "C3.03.00, Level 3, Connection",
     "description": "Welcome to your neighbourhood bakery café where smiles are served daily.\nEnjoy delicious pastries, warm bread, stunning cakes, and expertly brewed drinks while feeling right at home.\nOn every level, Paris Baguette strives to do their best to deliver the very best to you. Their certified bakers and baristas are brimming with talent and eager to share their perfectly crafted creations.\nParis Baguette strives to bring expertly crafted baked and brewed goods to their guests through a warm and welcoming bakery café experience that delivers joy to everyone.\nBuilt for connection and community, they take their responsibility as a good neighbour to heart. Through the magic of baking, they are committed to giving back and making a real impact.\n",
     "url": "https://www.parisbaguette.com/"
   },
   {
+    "id": 103,
     "name": "TGI Fridays",
     "address": "Lot 6.01.07 & 6.01.08, Level 6",
     "description": "Famous for American classics, TGI Fridays serves fresh appetizers, juicy burgers and delicious desserts. Dine in with friends and enjoy the fun of sharing, as their portion is perfect to share. With the fun and friendly waiters and waitresses, T.G.I Friday’s has become the ultimate destination for diners looking for something distinctive and different.",
     "url": "http://www.fridays.com.my/"
   },
   {
+    "id": 104,
     "name": "Barbeque Nation",
     "address": "Lot 9.102.00, Level 9, Pavilion Elite",
     "description": "Barbeque Nation has finally made its way to our shores, opening its first outlet in the heart of Bukit Bintang.\nLocated on Level 9, the establishment takes on the concept of DIY that allows diners to choose their favourite dishes from a wide range of buffet spreads featuring mouthwatering selections of meat and vegetarian delights. Apart from that, diners are spoilt for choice with a tantalising array of grilled skewers.",
     "url": "https://linktr.ee/barbequenation"
   },
   {
+    "id": 105,
     "name": "Hokkaido Baked Cheese Tart",
     "address": "Lot P1.12.01, Level 1, Gourmet Emporium",
     "description": "Originating from Hokkaido, our resident bakers worked with counterparts from Hokkaido, Japan to further improve the recipe of this baked pastry to ensure a uniqueness in taste and texture. The soft and creamy centre is made with a blend of three different types of cream, mascarpone and parmesan cheeses, piped into a crunchy shortcrust pastry base.\nTasting best when it is right out of the oven, the Hokkaido Baked Cheese Tart also taste awesome when chilled, giving you a smooth and refreshing experience. When frozen, the tart is alike a creamy cheesy ice cream. Try all the ways of eating it and decide which one you like best!",
     "url": "http://www.hbct.com.my"
   },
   {
+    "id": 106,
     "name": "Baan Phadthai",
     "address": "Lot C3.10.04, Level 3, Connection",
     "description": "Touted as the “House of Phad Thai” in Thailand, the award-winning Baan Phadthai specialises in the signature stir-fry dish that is made with secret 18-ingredient sauce. Expect a wide selection of great and authentic Thai dishes that will surely tantalise your taste buds.",
     "url": "https://www.baanphadthai.com/"
   },
   {
+    "id": 107,
     "name": "Sulbing",
     "address": "Lot 7.101.01, Level 7, Pavilion Elite",
     "description": "Dessert Café Sulbing with the Nature of the Four Seasons",
     "url": "https://www.instagram.com/sulbing.official/"
   },
   {
+    "id": 108,
     "name": "Potato Corner",
     "address": "P1.09.02, Level 1, Gourmet Emporium",
     "description": "The World’s Best Flavored French Fries since 1992! 💚 #PotatoCornerMY",
     "url": null
   },
   {
+    "id": 109,
     "name": "MICHELANGELO’S RISTORANTE ITALIANO",
     "address": "Lot C3.04.00, Level 3, Connection",
     "description": "This outlet provides mid-range Italian fine dining in a sophisticated setting. Here you can savor the upscale casual dining of authentic Italian menu and enjoy exotic cocktails. Set in rustic decor, Michelangelo’s is spacious but remains cozy with its warm lighting. Enjoy their great tasting ‘Spaghetti Marinara Sizzlelini’ and complete your meal with a glass of wine.\n",
     "url": "https://www.michelangelos-ristorante.com/"
   },
   {
+    "id": 110,
     "name": "EL&N London",
     "address": "C3.10.02, E3.10.02 &C3.11.00, Level 3, Connection",
     "description": "EL&N is the leading Instagrammable café and lifestyle brand. Everything they make is irresistibly chic, pink perfection. Their products help customers create that picture perfect moment – every time.\nEL&N stands for Eat, Live and Nourish. All that they create is informed by these 3 guiding touch points: The most delectable food and drink offering in a stunning setting, products for living a stylish life and a positive ethos to nourish your soul.\nPavilion Lifestyle /  Priority:Enjoy 10% off with a minimum spending of RM100 in a single receipt.(Click for more info)\nPavilion Luxe:Enjoy 15% off with a minimum spending of RM150 in a single receipt.(Click for more info)\nTourist Privileges:10% off any purchase or 20% off purchases with beverages.(Click for more info)\n*Terms and conditions apply.\n\n",
     "url": "https://my.elnlondon.com/pages/kl-pavilion-menu"
   },
   {
+    "id": 111,
     "name": "Tony Roma’s",
     "address": "Lot 1.15.00, Level 1, Gourmet Emporium",
     "description": "Considered the pioneer of Baby Back Ribs, Tony Roma’s can now be found all over the world. At Tony Roma’s, they take pride in using the freshest greens, herbs, fruits, vegetables, meats  seafood for our salads and entrees. It’s part of a tradition that includes making dozens of items from scratch every day – like fire-roasted vegetables, oven-baked desserts, hand-mashed redskin potatoes with real cream, sauces, marinades, dressings and original steak and seafood toppings. To end the perfect meal, sink your teeth into the Raspberry Brownie Royale.\n\n",
     "url": "http://www.tonyromas.com.my/menu.html"
   },
   {
+    "id": 112,
     "name": "Haidilao Hot Pot",
     "address": "Lot 10.104.0,10.105.0 & P10.101, Level 10, Pavilion Elite",
     "description": "Sichuan Haidilao Catering Co. Ltd was founded in 1994 and it began serving the worldwide popular Sichuan style Hot Pot gathering various regional influences and tastes along the way.\nSince then, Haidilao has always dedicated to achieving the perfect blend of authentic traditional Chinese food- Hot Pot with the convenience of modern trend. And we would love to deliver the healthy Hot Pot culture all over the world.",
     "url": "https://facebook.com/HaidilaoMalaysia"
   },
   {
+    "id": 113,
     "name": "Laem Charoen Thai Seafood",
     "address": "Lot 1.18.02, Level 1, Gourmet Emporium",
     "description": "Laem Charoen Seafood’s uniquesignature dish is a deep-fried seabass cooked with fish sauce until crisp andgolden. It is a simple dish, full of flavour and cooked from the heart usingonly the freshest ingredients available with Thai-style flavour and delicatecooking techniques.\nLaem Charoen Seafood has grown tobecome one of the most loved seafood restaurants in Thailand with many branchesacross the country, attracting both foreigners and Thai customers alike.",
     "url": "https://www.laemcharoenseafood.com/en"
   },
   {
+    "id": 114,
     "name": "Yu Yan",
     "address": "Lot 7.100.00, Level 7, Pavilion Elite",
     "description": "Yu Yan Tea Factory was founded in 1904 and is currently located at Wuyi Huaxia City, Gaosuban, Wuyishan Street, Wuyishan City. Madam Fan Youmei, the current tea factory director, was born into a tea-oriented family, inheriting the traditional process of Wuyi rock tea. She adheres to the charcoal roasting technique to ensure the aroma and taste of the rock tea in the best performance.\nBesides promoting the culture of tea, Yu Yan hopes that the worldwide tea consumer has the chance to recognize the classic art of tea. In the year 2005, Madam Yu Xi Hua (the daughter of Mdm. Fan) came to Malaysia to establish the Le Ye Xuan Dahongpao company and operated the YuYan Dahongpao tea shop on the Jalan Sultan in the capital Kuala Lumpur. Nowadays, the tea shop has promoted three major types of tea, Wuyi Rock Tea, Jianyang White Tea, and TongMuGuan Black Tea.\n",
     "url": "https://yuyandahongpao.com/"
   },
   {
+    "id": 115,
     "name": "Tan Ngan Lo",
     "address": "Lot P1.09.01, Level 1, Gourmet Emporium",
     "description": "Tan Ngan Lo medicated tea is a herbal mixture made with various of natural herbs. The unique formulation is especially effective in moderating health problems such as bad breaths, mouth ulcers, sore throats, coughs, flu, and lethargy. It also relieves stress brought about by work related pressure, lack of sleep, and unhealthy lifestyles.",
     "url": "http://www.wenjiang.com.my/"
   },
   {
+    "id": 116,
     "name": "Gindaco",
     "address": "Lot 1.13.01, Level 1, Gourmet Emporium",
     "description": "World-famous, piping hot takoyaki balls made with premium wheat flour and octopus filling with a choice of four variants – Original, Negidako, Cheese Mentaiko and Teritama. Original isGindaco’sflagship, and it is drizzled withGindaco’ssignature sauce and topped with dried seaweed and dancing bonito flakes.\nBesides takoyakis,Gindacoalso serves Yakisoba – Japanese soba fried with cabbage, chicken slices, dried green seaweed and dancing bonito flakes. All Gindaco’s products are pork-free.",
     "url": "https://www.facebook.com/GindacoMalaysia/"
   },
   {
+    "id": 117,
     "name": "ROYCE’",
     "address": "Lot. P1.25.03, Level 1, Gourmet Emporium",
     "description": "ROYCE’ is a Japanese chocolate maker and confectioner based in Hokkaido, a utopia of mountains, sparkling water, fresh air – undoubtedly, home to only the finest of ingredients. ROYCE’ crafts confectioneries brimming with flavour and bursting with originality, using keenly selected ingredients from Japan and all around the world.Tourist Privilege:Free Pure Chocolate of any flavour worth RM52 with purchase of RM350 on regular items in a single receipt.(Click for more info)",
     "url": "https://www.royce.com.my/"
   },
   {
+    "id": 118,
     "name": "Cold Stone Creamery",
     "address": "Lot P1.24.00, P1.25.01, P1.25.02, Level 1, Gourmet Emporium",
     "description": "Cold Stone Creameryoffers the Ultimate Ice Cream Experience. Ice Cream, Ice Cream Cakes, Shakes, and Smoothies the Way You Want It.\n",
     "url": "https://www.facebook.com/coldstonemy/"
   },
   {
+    "id": 119,
     "name": "Mahnaz Food",
     "address": "Lot P1.03.00, Level 1",
     "description": "Mahnaz Food is Malaysia’s largest chain of outlets offering dates, dry fruits, nuts, almond, juices and many other foods. We are a wholesale supplier with the best quality at the most affordable rates.",
     "url": "https://www.mahnazfood.com/"
   },
   {
+    "id": 120,
     "name": "Starbucks Coffee (Level 3)",
     "address": "Lot 3.03.01, C3.08.00, C3.09.00, Level 3, Connection",
     "description": "Carefully selecting the finest beans, Starbucks earned its’ name from serving high-quality coffee. From Espresso to Frappuccino to Teas, Starbucks offers great coffee and fresh food from morning till late. Order your favorite beverage and enjoy your scroll at the mall!",
     "url": "http://www.starbucks.com.my"
   },
   {
+    "id": 121,
     "name": "Dome Café",
     "address": "Lot P2.08.00, Level 2, Centre Court",
     "description": "Renowned for its specialty coffee, every fine cup of DÔME coffee starts with high quality coffee beans. The finest Arabica beans are selected and roasted to perfection using the latest technologies to maximize freshness and flavour for the ultimate caffeine fix. DÔME Café is also known for its extensive range of Asian & Western dishes. Pizzas, pastas, wraps, salads, as well as the Chicken Pie, Nasi Lemak and Signature Espreski – part dessert, part drink – make up the repertoire of delicious food, great drinks and chill music ensconced in a warm, cosy café ambience. DÔME Café is the ideal spot to eat, meet, drink. Simply drop by for comfort food, coffee and conversation.",
     "url": "https://www.domecafe.com.my/"
   },
   {
+    "id": 122,
     "name": "Burger King",
     "address": "Lot 1.103.00 & E1.103.0, Level 1, Pavilion Elite",
     "description": "Every day, more than 11 million guests visit BURGER KING® restaurants around the world. And they do so because the restaurants are known for serving high-quality, great tasting, and affordable food. Founded in 1954, BURGER KING® is the second largest fast food hamburger chain in the world.\nBURGER KING® commenced operations in Malaysia in 1997 with the opening of its first restaurant at Sungai Buloh Overhead Bridge. Today, Cosmo Restaurants Sdn Bhd operates more than 120 BURGER KING® restaurants in Malaysia where customers across the country can enjoy the great and healthy flame-grilled taste of Burger King products.\nThe original HOME OF THE WHOPPER®, the commitment to premium ingredients, signature recipes, and family-friendly dining experiences is what has defined the brand for more than 50 successful years.",
     "url": "https://www.burgerking.com.my/"
   },
   {
+    "id": 123,
     "name": "Dragon-i Peking Duck",
     "address": "Lot 1.17.00, Level 1, Gourmet Emporium",
     "description": "Inspired by the rich and diverse culinary offerings from China, especially from the regions of Shanghai, Szechuan, Beijing and Lanzhou, each delicacy in Dragon-i is prepared by highly-skilled chefs from mainland China using top quality ingredients to ensure authenticity in both presentation and taste. Savour the warmth of their signature dishes such as Xiao Long Bao (Shanghainese steamed meat dumplings) and La Mian (hand-pulled noodles).",
     "url": "http://www.dragon-i.com.my"
   },
   {
+    "id": 124,
     "name": "Beryl’s",
     "address": "Lot TL1.108.00, Level 1, Pavilion Elite",
     "description": "Beryl’s uses only the highest quality cocoa beans from Ghana to make the best chocolate in Malaysia.\nHeaven In Your Mouth with Beryl’s Fine Chocolate.",
     "url": "http://www.berylschocolate.com.my/"
   },
   {
+    "id": 125,
     "name": "Sushi Zanmai",
     "address": "Lot 6.24.1A, Level 6",
     "description": "Sushi Zanmai is the genuine conveyor-belt sushi restaurant that provides more than 100 assortments of sushi and large varieties of cooked food that are authentically Japanese. Come and enjoy this well-loved sushi restaurant by families and young professionals.",
     "url": "https://www.supersushi.com.my/"
   },
   {
+    "id": 126,
     "name": "Boost Juice Bars",
     "address": "Lot P1.12.02, Level 1, Gourmet Emporium",
     "description": "Australian juice bar phenomenon, Boost Juice Bars, promises to tickle Malaysian taste buds with the delicious smoothies that have made the brand a global success story. All products have been developed by a dedicated Boost nutritionist – and everything is at least 98% fat-free and free from any artificial  and . For those who are opting for healthier, fresh alternatives for a snack, head on to the Boost Juice Bars.\nPavilion Junior Privilege:10% off normal priced items from “Most Popular” drink menu.(Click for more info)",
     "url": "http://www.boostjuicebars.com.my/"
   },
   {
+    "id": 127,
     "name": "SIX by Saro",
     "address": "Lot. 8.104.00, Level 8, Pavilion Elite",
     "description": "Saro is a luxury lounge bar in the heart of Kuala Lumpur. Located within the prestigious Pavilion Elite along the famous Bukit Bintang strip, it’s the ideal inner-city sanctum, where you can immerse yourself in rich surrounds and enjoy decadent cocktails whilst savouring tapas portioned culinary delights.",
     "url": "http://sarolounge.com/"
   },
   {
+    "id": 128,
     "name": "OCEAN TWE12VE",
     "address": "Level 3, Connection",
     "description": "OCEAN TWE12VE is a seafood restaurant conceptualized and operated by MICHELANGELO’S and launched in Pavilion KL. Their Western-style, aesthetically-plated seafood is guaranteed to appeal to the senses.\nVersatile starters are ideal for sharing, or even as a main dish – enjoy them with their eclectic and exciting mocktails and cocktails. Try pairing the fresh oysters, live mussels, rare-seared yellowfin tuna, and bacalao (salted cod carpaccio) with a glass of Champagne or Pinot Grigio for a satisfying treat!\nOr indulge in their Lobster Bisque, made with authentic Canadian lobster meat, accompanied by a glass of Chardonnay or Kombucha.\nOverwhelmed by the wide choice of seafood? Just opt for the Spice-Grilled Lamb Rack, Oven-Baked Beef Rib, or Grilled Chicken with their special chilli-lime sauce.",
     "url": "https://www.facebook.com/Oceantwe12ve/"
   },
   {
+    "id": 129,
     "name": "CHAGEE",
     "address": "Lot 6.43.00, Level 6",
     "description": "Originated from Yunnan China in November 2017, CHAGEE is one of the earliest regional teahouse chain that positions itself as the purveyor of Original Tea Leaf of the Chinese Culture.",
     "url": "https://bawangchaji.com.my/"
   },
   {
+    "id": 130,
     "name": "Tealive Plus",
     "address": "Lot 1.10.00, Level 1",
     "description": "Indulge in gourmet selections that are specially-crafted to pair with the unique drinks that can only be found in Tealive Plus, the first premium Tealive concept store in Pavilion KL.",
     "url": "https://www.tealive.com.my/home"
   },
   {
+    "id": 131,
     "name": "ParaThai",
     "address": "Lot 1.03.00 & 1.04.00, Level 1, Gourmet Emporium",
     "description": "Experience the intensity of the spices and the fragrance of fresh herbs laced and lavished in each dish at ParaThai. Led by Chef Bunmee and his expert team of Thai nationals, the culinary team stays true to the culinary culture and ancient flavours, offering guests an elaborate menu where they will be spoilt with choices. Expect to savour a list of dishes prepared using ancient recipes with a focus on flavours and freshness.",
     "url": "https://www.facebook.com/parathaileten/"
   },
   {
+    "id": 132,
     "name": "Rollti",
     "address": "Lot 1.110.00, Level 1, Pavilion Elite",
     "description": "Rollti – a rolled roti canai. A handheld product with all the yumminess of a traditional Roti Canai wrapped in fantastic flavour profiles from around Malaysia while combining fresh proteins and vegetables.\nRollti is Malaysia No.1 best tasting Roti Canai Wrap!",
     "url": "https://rollti.co/"
   },
   {
+    "id": 133,
     "name": "Yayoi Japanese Teishoku Restaurant",
     "address": "Lot C4.05.01 & C4.05.02, Level 4, Connection",
     "description": "YAYOI prepares teishoku with a healthy balance of dishes on a single tray. These set meals contain freshly-cooked rice, the staple food of the Japanese people, accompanied by miso soup and other main and side dishes. YAYOI continues the efforts to promote the unique styles and wisdom of Japanese food culture to the world through its teishoku dishes. YAYOI, taking traditional Japanese cuisine into the world and the future.",
     "url": "https://www.yayoi.com.my/"
   },
   {
+    "id": 134,
     "name": "The Coffee Bean & Tea Leaf (Level 3)",
     "address": "Lot C3.01.00, Level 3, Connection",
     "description": "Coffee Bean offers over 22 varieties of coffee and 20 kinds of tea. Its’ signature drink is the Original Ice Blend which are available in Mocha, Caramel, Hazelnut, etc. Coffee Bean’s dedication is to excellence and quality, promising a cup of great coffee. Enjoy the smooth creamy coffee and some pastries to satisfy the sweet tooth.\n",
     "url": "http://www.coffeebean.com.my"
   },
   {
+    "id": 135,
     "name": "Grand Imperial Seafood Hotpot & BBQ",
     "address": "Lot 9.105.00, Level 9, Pavilion Elite",
     "description": "The new Grand Imperial Seafood Hotpot & BBQ located in Pavilion Elite Shopping Mall (9th floor).Grand Imperial’s highly skillful and experienced chefs are very particular with details. From the selection of ingredients, preparation and cooking, they’re committed in providing customers with the highest quality of food.\n",
     "url": "https://grandimperial.com.my/"
   },
   {
+    "id": 136,
     "name": "Samy & Min Bak Kut Teh",
     "address": "Lot. 5.01.09, Level 5",
     "description": "Tourist Privilege:10% OFF total bill with purchase of RM50 and above in a single receipt(Click for more info)\nPavilion Lifestyle, Priority, Luxe Privilege:10% off total bill with purchase of RM50 and above in a single receipt(Click for more info)\nPavilion Junior Privilege:10% off total bill with purchase of RM50 and above in a single receipt(Click for more info)\nNon-halal\nBak Kut Teh is popularly associated with Klang, and locals actually believed the place to be the origin of Bak Kut Teh as recipes and measurements are passed down from generations, churning out the best taste and quality of Bak Kut Teh.\nSamy & Min Bak Kut Teh is a brand and name on it’s own that has a vast reputation in the Bak Kut Teh field in Klang. They maintain the quality and traditions of their Bak Kut Teh based on 3 main pillars – good rice, good soup and good pork. Samy & Min Bak Kut Teh has more than 25 years worth of Bak Kut Teh legacy and prides for their strict recipes and ingredients’ freshness to uphold the taste and quality of what they serve – rich broth and tenderly fresh meat.\nSpecialty: 25 Years Of Bak Kut Teh Legacy\nThe beauty of having a meal in Samy & Min at Pavilion KL is a comfortable spacious space that’s well eqiupped air-conditioned, together with an outdoor view. In terms of menu selection, you are able to decide and pick from any of the 10 sections of the meat that ranges from pork ribs to pork bend. It’s like Bak Kut Teh ala tapas version.If you don’t have the time to travel all the way to Klang but still need to fulfill your Samy & Min Bak Kut Teh cravings, obviously this place is for you.\nMeaty Bite: Meat To Success\n‘Samy & Min Big Bone’ dish is also one to look out for as it is one of the top Klang favourites for the balanced texture of tender meat and bouncy gelatine.One of the main pillars – GOOD MEAT is shown through the freshness of the meat and it a priority here at Samy & Min as you can actually see and taste the difference. At Samy & Min Bak Kut Teh, the ingredients are freshly made every morning to give a smooth and tender meat texture that falls of the bones.\nBalanced Bite: The-Good-Duo‘Samy & Min Pork Bend’ is the hot seller dish as it contains part that are rare and limited. The texture of the meat is moist and has a nice tendon-like bite to the gelatin.The other pillar – GOOD SOUP is the broth that Samy & Min uses in their entire menu. The broth is thicker than your usual Bak Kut Teh soup as it churns up the prime essence and flavours. With the strong and balanced broth, it goes exceptionally well with the special fragrant scallion rice that is their last pillar – GOOD RICE.\nUnique Bite: The Palate Teaser\nTo complete the Samy & Min Bak Kut Teh experience, order up their side dishes that is only available in their Pavilion KL outlet. The abalone dish here has a chewy texture and sweet taste – a great palate teaser before diving in the actual Bak Kut Teh dishes. Other side dishes available would be deep-fried beancurd in broth, juicy and succulent mushrooms and perfectly fried egg with onion.",
     "url": null
   },
   {
+    "id": 137,
     "name": "TANYU 探鱼",
     "address": "Lot 7.01.02, Level 7, Dining Loft",
     "description": "TANYU specialises in Chongqing grilled fish in over 70 major cities in Asia with more than 300 outlets to date. Well known for its signature Grilled Fish with Fresh Green Pepper, TANYU is landing its first flagship store in Malaysia at Pavilion Kuala Lumpur. In order to cater to the diverse tastes of local Malaysians, TANYU makes use of a variety of cooking methods and offers 8 kinds of grilled fish flavors ranging from mala, sourish spicy, to savory and more.",
     "url": "http://www.tanyusg.com/"
   },
   {
+    "id": 138,
     "name": "Koong Woh Tong",
     "address": "Lot P1.02.00, Level 1, Gourmet Emporium",
     "description": "Koong Woh Tong’s authentic Herbal Jelly or “Guiling Gao” is made with more than 20 types of the finest Chinese traditional herbs. The healing attributes of our Herbal Jelly lies in the processed using an age-old secret recipe. The herbs are boiled more than 9 hours to jelly like texture, giving it our superior quality signature taste.\nKoong Woh Tong’s authentic Herbal Jelly or “Guiling Gao” is made with more than 20 types of the finest Chinese traditional herbs. The healing attributes of our Herbal Jelly lies in the processed using an age-old secret recipe. The herbs are boiled more than 9 hours to jelly like texture, giving it our superior quality signature taste.\nOur products are non-alcoholic, non-fat and is suitable for people of all ages and vegetarians as well. Herbal Jelly can detoxify body, nourishes the skin, relieve indigestions, reduce body heat and much more.\nOur products are non-alcoholic, non-fat and is suitable for people of all ages and vegetarians as well. Herbal Jelly can detoxify body, nourishes the skin, relieve indigestions, reduce body heat and much more.",
     "url": "https://kwt.my/"
   },
   {
+    "id": 139,
     "name": "Leekor Leekor",
     "address": "P1.11.04, Level 1",
     "description": "",
     "url": null
   },
   {
+    "id": 140,
     "name": "Shu Guo Yin Xiang Hotpot",
     "address": "Lot 6.01.06, Level 6",
     "description": "Shu Guo Yin Xiang Hotpot is a chain of hot pot restaurants from Sichuan, China founded in Chengdu, Sichuan, China. Indulge in an authentic hotpot experience with their specialty hotpot bases and tuck into a variety of dishes, prepared using fresh ingredients.",
     "url": "https://www.facebook.com/shuguoyinxiang.pavilion"
   },
   {
+    "id": 141,
     "name": "Starbucks Coffee (Level 6)",
     "address": "Lot 6.02.00, Level 6",
     "description": "Carefully selecting the finest beans, Starbucks earned its’ name from serving high-quality coffee. From Espresso to Frappuccino to Teas, Starbucks offers great coffee and fresh food from morning till late. Order your favorite beverage and enjoy your scroll at the mall!\n",
     "url": "http://www.starbucks.com.my"
   },
   {
+    "id": 142,
     "name": "Din Tai Fung",
     "address": "Lot 6.01.05, Level 6",
     "description": "Applicable for dine-in only; subjected to availability and other terms & conditions.(Click for more info)\n#DDD – #DinnerDateDestination featuring Din Tai Fung, Level 6\nA well-established player in the classic Taiwanese restaurant scene since 1972 – the Michelin-starred Din Tai Fung has always been at top of mind for their succulent soup dumplings (also known as ‘xiao long bao’). Apart from their delicious staple noodles and rice dishes, in this segment, we’re focusing on their out-of-the-norm savoury and sweet dishes that are absolutely taste-worthy to tantalise your tastebuds.\n\nSpecial Features: Oriental Lattice with A Modern Twist\nIn Din Tai Fung, the interior is inspired by ancient Chinese mansions with wooden lattice designs that represents eternal love. It’s then complemented by a minimalist take on the wall-imprinted Chinese drawers that gives the eatery a modern romantic oriental look and feel while tucking into delectable Taiwanese dishes with mild Shanghainese influence. Order a variety of dishes to try and share during your dinner date, just like how the Taiwanese does it.\n\nSpicy Bite: The Wake Up Appetiser\nIf you’re a fan of spicy dishes, the Spicy Sichuan Chicken dish is bound to have you on your feet with its chilled, poached and tender chicken drenched in hot and mildly sweet Sichuan pepper blend, alongside crunchy peanuts and sesame to awaken your tastebuds.To simmer down the heat, order up glasses of wine that are exclusively available in Pavilion KL that is a match made in heaven with spicy treats.\n\nSoupy Bite: 18 Perfect Golden Folds\nThe pork ‘xiao long bao’ in Din Tai Fung is the all-time favourite of many loyal patrons. If you take a peek into the open kitchen, observe how skilled chefs are carefully shaping the little soup-filled dumplings with consistent quality of 21g and 18 golden folds to reach the optimum level of soup encasing.\nWe were taught how to properly eat the infamous ‘xiao long bao’. First, dress the ginger with one dash of soy sauce and three dashes of vinegar that is imported from Taiwan. Then, drink the soup of the ‘xiao long bao’, dip it in the sauce, top with ginger and ascend to food-dumpling-heaven.\n\nRefreshing Swig: A Zesty Gulp\nDin Tai Fung houses the Sparkling Roselle drink using Roselle, a hibiscus species herb that is known for its mildly sweet and tangy natural flavours and blood circulation benefits. The Sparking Roselle drink is divine especially when pairing with Din Tai Fung’s delicacies.\n\nNoodle Bite: A Light Slurp\nDin Tai Fung serves the Minced Pork In Bean Sauce Dry Noodles (also known as ‘Zha Jiang Mian’) that is different than any other. Its lighter version follows Taiwanese tastebuds for a cleaner taste of the ingredients. The dish is a mixture of different elements that brings different delight textures such as minced pork, tofu and edamame that ties the whole dish together.\n\nRice Bite: The DTF Signature\nPork Chop Fried Rice is Din Tai Fung’s signature dish that uses Japanese rice grains coated with ‘kampung egg’ for a more savoury and satisfying bite, topped with premium pork chop. This has a Japanese element as Taiwan was colonised by Japan for 50 years. It’s especially evident through its use of Japanese-inspired ingredients and great customer services.\n\nCrunchy Bite: The Taiwanese Starter\nThe Din Tai Fung house special – Oriental Salad is a Taiwanese staple starter dish that cleanses the palate with its zesty flavours and crunchy textures from a mixture of sea kelp, glass noodles, bean sprouts and dry bean curds with a splash of vinegar serve chilled.\n\nCreamy Bite: Best of Two Worlds\nA hidden gem that you can rarely find in other restaurants would be would be the super creamy and sticky dessert – Yam Paste Dessert. To get the optimum natural sweetness, this unique and delectable treat is pretty tricky to make as it requires constant stirring by hand for one hour each for two separate components – yam paste and pumpkin paste.\n\nChocolaty Bite: Wrapped Goodness\nDin Tai Fung takes an unconventional twist on its signature “xiao long bao”, bringing you chocolate “xiao long bao” that encapsulates a chewy chocolate mochi filled with warm dark chocolate that’ll take you on a surprise sweet journey.\n\n\n\n",
     "url": "http://www.dintaifung.com.my/"
   },
   {
+    "id": 143,
     "name": "Yang Guo Fu Mala Tang",
     "address": "Lot 7.101.02, Level 7, Pavilion Elite",
     "description": "YangGuoFu specialises in a popular Sichuan dish, Malatang. Well known for its yummy soup with natural ingredients, their soup consists of Classic Beef Bone Broth Malatang, Sweet & Sour Tomato Soup Malatang and Mellow Malaban. Choose from a wide range of over 60 fresh ingredients including meat, seafood, vegetables, noodles, and specialty items to create your ultimate bowl of Malatang.\n",
     "url": "https://www.instagram.com/ygf.my/"
   },
   {
+    "id": 144,
     "name": "Krispy Kreme Doughnut",
     "address": "Lot TL1.110.00, Level 1, Pavilion Elite",
     "description": "Krispy Kreme specialised in doughnuts and coffee since 1937. All Krispy Kreme stores offer its signature Original Glazed ® doughnuts as well as 18 core varieties including iced, oreo and chocolate doughnuts. Their product may be special and unique – but it’s our people who make the difference. Every month they do their best to introduce something fantastic so that they can help bring some joy to your day!\n\nPavilion Junior Privilege:One (1) Vitakids and an assorted doughnut for RM6.30(Click for more info)",
     "url": "http://www.krispykreme.com.my/"
   },
   {
+    "id": 145,
     "name": "GSY Store",
     "address": "TL1.107.00",
     "description": "123",
     "url": null
   },
   {
+    "id": 146,
     "name": "Gong Cha",
     "address": "Lot C3.17.00, Level 3, Connection",
     "description": "The term “Gong Cha” is translated as the ancient act of offering tea to royalty, such as the Emperor of China. In the same way, Gong Cha hopes to offer only the best quality tea to everyone around the world- because you, our customer, is like royalty to us!\nGong Cha is an international bubble tea chain that originated from Kaohsiung, Taiwan in 2006, and since 2009, has swept Malaysia’s neighbouring countries – Singapore, Hong Kong, China, Macau and the Philippines – by storm. To date, Gong Cha is the fastest growing brand and has further expanded internationally to South Korea, Japan, USA, Canada and other countries, with more than 1,500 stores worldwide. Gong Cha’s story is one that roots itself as one of the most reliable providers of quality tea in the world.",
     "url": "https://www.gong-cha.com.my/"
   },
   {
+    "id": 147,
     "name": "Dar Soo Vegetarian Cuisine",
     "address": "Lot 8.101.00, 8.102.00, 8.103.01, 8.103.02, Level 8, Pavilion Elite",
     "description": "Vegetarian restaurant serving dishes with vegetables, soya bean, tauhu, and more.",
     "url": null
   },
   {
+    "id": 148,
     "name": "DayOne DayOne Noodles",
     "address": "Lot 1.18.01, Level 1, Gourmet Emporium",
     "description": "We proudly present Chew-chew Noodles. Handmade byprofessional noodle-makers and tailored by noodles making machines with specialspecifications, Chew-chew Noodles use free-range eggs and strong flour, with nopreservatives and processed products. We use the recipes that have been handeddown only to our chefs through the generations, the healthy sauces made fromtraditional lard dregs and the spices made of chopped scallion. Each bowl ofChew-chew Noodles will bring back the memories of the quality time you have hadwith your family.",
     "url": null
   },
   {
+    "id": 149,
     "name": "Oriental Kopi",
     "address": "Lot 1.30.00, Level 1",
     "description": "Oriental Kopi prides itself in serving mouthwatering NanYang cuisine that is borne of age-old recipes and traditions. Signature dishes include Oriental Coffee, Portuguese EggTart & Polo Bun.\n",
     "url": "https://www.instagram.com/orientalkopi.asia/"
   },
   {
+    "id": 150,
     "name": "Oloiya",
     "address": "Lot 1.12.00, Level 1, Gourmet Emporium",
     "description": "Savour the traditional Chinese treat called ‘bak kua’ (dried meat in Hokkien)!  Freshly barbequed from the oven, it is much healthier to enjoy this way. Flavors range from pork, chicken and lobster. It comes in the form of bacon, medallion, bite size or floss. It is especially popular during the Chinese New Year period.",
     "url": "https://m.oloiya.com/"
   },
   {
+    "id": 151,
     "name": "Shojikiya",
     "address": "Lot 6.24.07, Level 6, Tokyo Street",
     "description": "Shojikiya offers a variety of food products from chocolates, chips, crackers, candy, beverages, and ice cream including canned foods, sauces and dressing, frozen foods and wines that are imported from Japan. We have an extensive range for you to choose from and we are always bringing in new and exotic products to delight you and your family.\nCheck out our store now!",
     "url": "http://shojikiya.com.my/"
   },
   {
+    "id": 152,
     "name": "Fei Fei Crab Restaurant",
     "address": "Lot 8.106.00 & S8.100.02, Level 8, Pavilion Elite",
     "description": "The most popular crab restaurant in KL There are many special and innovative crab dishes here. Founded in 2008.\nPavilion Lifestyle, Priority, and Luxe:Enjoy 10% off on the total bill.(Click here for more)",
     "url": null
   },
   {
+    "id": 153,
     "name": "RasaTea House",
     "address": "Lot 8.100.00, Level 8 Pavilion Elite",
     "description": "At RasaTea House, we invite you to savor our unique fusion cuisine, blending the vibrant flavors of Nyonya (Peranakan) culinary traditions with the elegance of Western cuisine. Our menu features a delightful mix of British and Nyonya influences, showcasing a harmonious blend of Chinese and Malay flavors with classic Western dishes. Experience the best of both worlds in a culinary journey that pays homage to the rich, diverse heritage of the Baba Nyonya.",
     "url": "https://linktr.ee/rasateahouse"
   },
   {
+    "id": 154,
     "name": "Da On Fine Korean Cuisine",
     "address": "Lot 6.40.00, Level 6",
     "description": "Da On represents the modern facets of Korean cuisine, from the interior concept and refined service to its contemporary food presentation. The cuisine remains authentic. Fancy a mildly spiced Kim Chi ice cream? How about Mul Naeng Myeon (Cold Noodles) – chewy, thread-thin buckwheat noodles cooked with apple and pear slices, hard-boiled egg, sliced beef, radish and cucumber? Let Da On sweep you away with its contemporary ambiance, cordial service and sumptuous specialties.",
     "url": "https://www.daonrestaurant.com/"
   },
   {
+    "id": 155,
     "name": "Serai @ Pavilion KL",
     "address": "Lot 7.01.04, Level 7, Dining Loft",
     "description": "Serai@Pavilion KL is a home-grown restaurant created by a family whose passion is to share gastronomical delights.\nEstablished in 1990, Serai devotedly brings years of culinary experience to your plate. The carefully curated menu features local delicacies such as Nasi Kerabu with tender ayam percik and steamed fish doused in spicy and tangy lime sauce, co-existing with Western favourites such as the succulent Moroccan Lamb Shank and Gourmet Beef Burger. End your meal on a sweet note with charming home-made desserts like the ever popular Berry Pavlova.\nTourist Privilege:10% discount with RM100 minimum spend.(Click for more info)\n*Pavilion Privileges Member Card/Mobile App/Pavillion Hotel KL — Key Access Card/Banyan Tree Hotel KL – Key Access Card must be presented during payment.",
     "url": "http://www.seraigroup.com.my"
   },
   {
+    "id": 156,
     "name": "Herbal Farmer",
     "address": "Lot 1.32.00 & 1.33.00, Level 1",
     "description": "Herbal Farmer, founded in 2017. ‘Herbal’ with ‘Farmer’ can be associate that healthcare is accumulated over time, just like the harvest of a farmer’s hard work every day. Herbal Farmer modernize the traditional industries, makes traditional images into textures, integrates the culture and characteristics of the brand, and provides brand-new and fashionable Chinese herbal products and shopping experience.\n",
     "url": "https://www.herbalfarmer.com.my/"
   },
   {
+    "id": 157,
     "name": "Lavender",
     "address": "Lot P1.07.00 & 1.08.00, Level 1, Gourmet Emporium",
     "description": "Enjoy a selection of bread and pastries in Lavender, from Hong Kong Style Bun to Pineapple Tarts. All products are freshly baked from the hot oven to give you the buttery aroma. Be spoiled by the wide variety of bakery food you can find here – be it for a quick breakfast or tea time snack!",
     "url": "http://www.lavender.com.my/"
   },
   {
+    "id": 158,
     "name": "Yuan Lao Si Hotpot",
     "address": "C4.02.00, Level 4, Connection",
     "description": "At Yuanlaosi Hotpot, we are committed to “putting your experience” first.\nAs we continue to study and improve the food and services, the brand adheres to quality and fresh foods, innovative ingredients in our recipe with personalized services. Yuanlaosi’s goal is to provide the best taste and experience for all consumers.\n",
     "url": "https://www.facebook.com/Yuanlaosi/"
   },
   {
+    "id": 159,
     "name": "Fuiyoh! It’s Uncle Roger",
     "address": "Lot 7.102.00, Level 7, Pavilion Elite",
     "description": "Haiyaa! Uncle Roger finally open restaurant, and of course got fried rice. You think Uncle Roger open place without fried rice? So silly! Niece and nephew, come try, or you’ll make Uncle Roger so disappointed!",
     "url": null
   },
   {
+    "id": 160,
     "name": "Nanyang Cafe",
     "address": "7.104.00 & 7.105.00, Level 7, Pavilion Elite",
     "description": "A Malaysia born culinary brand, a fusion interpretation of Nanyang delicacies. Signature favourites include Hong Kong Style Wanton Noodles, Freshly Baked Polo Bun, Nanyang Coffee & Tea. Offers an all-day dining experience in casual and relax ambience.",
     "url": null
   },
   {
+    "id": 161,
     "name": "Rakuzen",
     "address": "Lot 9.106.00, Level 9, Pavilion Elite",
     "description": "Rakuzen is committed to providing genuine Japanese food at affordable prices, in cosy ambience, such that patrons of all levels and ages can enjoy dining in a warm, friendly, welcoming & homely environment. The menu provides a wide selection of sushi, sashimi and range from seasonal dishes to exclusive personalized omakase sets, to give valued patrons a very unique Rakuzen dining experience.",

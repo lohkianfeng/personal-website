@@ -8,9 +8,9 @@ const getRestaurant = async (req: Request, res: Response): Promise<any> => {
 
   const data = await readFile(filePath, "utf-8");
 
-  const restaurants = JSON.parse(data);
+  const restaurant = JSON.parse(data);
 
-  res.status(200).json(restaurants);
+  res.status(200).json({ restaurant: restaurant });
 };
 
 export default getRestaurant;
