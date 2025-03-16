@@ -3,6 +3,8 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 
+import { router as chatRoute } from "@/routes/chatRoute";
+
 // error handling
 process.on("uncaughtException", (err) => {
   console.error("Uncaught Exception:", err);
@@ -24,6 +26,11 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+app.use((req: Request, res: Response, next) => {
+  console.log(req.method, req.originalUrl);
+  next();
+});
+
 // middleware
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
@@ -33,6 +40,8 @@ app.use(cookieParser());
 app.get("/api", (req: Request, res: Response): void => {
   res.status(200).send("This is /api route");
 });
+
+app.use("/api/chat", chatRoute);
 
 // http
 app.listen(config.port, () => {

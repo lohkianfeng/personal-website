@@ -6,13 +6,15 @@ import { Thread } from "@/components/assistant-ui/thread";
 
 import { AssistantModal } from "@/components/assistant-ui/assistant-modal";
 
+import { MyRuntimeProvider } from "./MyRuntimeProvider";
+
 function App() {
   const runtime = useChatRuntime({
-    api: "/api/chat",
+    api: "http://localhost:5000/api/chat",
   });
 
   return (
-    <>
+    <MyRuntimeProvider>
       <AssistantRuntimeProvider runtime={runtime}>
         <div className="grid h-dvh grid-cols-[200px_1fr] gap-x-2 px-4 py-4">
           <ThreadList />
@@ -23,7 +25,7 @@ function App() {
       <AssistantRuntimeProvider runtime={runtime}>
         <AssistantModal />
       </AssistantRuntimeProvider>
-    </>
+    </MyRuntimeProvider>
   );
 }
 
