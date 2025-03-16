@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useLocation } from "react-router";
 
 import {
@@ -9,51 +10,87 @@ import {
 } from "@/components/ui/breadcrumb";
 import { User, House, Bot } from "lucide-react";
 
-const personal = [
+const items = [
   {
-    title: "About Me",
-    url: "aboutme",
-    icon: User,
-    newTab: false,
+    title: "Personal",
+    url: "personal",
+    children: [
+      {
+        title: "About Me",
+        icon: User,
+        url: "aboutme",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    title: "Projects",
+    url: "projects",
+    children: [
+      {
+        title: "Simplyfi Hub",
+        icon: House,
+        url: "https://hub.simplyfi.co",
+        newTab: true,
+      },
+      {
+        title: "Chatbot",
+        icon: Bot,
+        url: "chatbot",
+        children: [
+          {
+            title: "Chat",
+            url: "chat",
+            newTab: false,
+          },
+          {
+            title: "Knowledge Base",
+            url: "knowledgebase",
+            newTab: false,
+          },
+        ],
+      },
+    ],
   },
 ];
 
-const projects = [
-  {
-    title: "Simplyfi Hub",
-    url: "https://hub.simplyfi.co",
-    icon: House,
-    newTab: true,
-  },
-  {
-    title: "Chatbot",
-    url: "chatbot",
-    icon: Bot,
-    newTab: false,
-  },
-];
+const findBreadcrumbs = (paths, menu) => {
+  let breadcrumbs = [];
+  let currentMenu = menu;
+
+  for (const path of paths) {
+    const match = currentMenu.find((item) => item.url === path);
+    if (!match) break;
+
+    breadcrumbs.push(match);
+    currentMenu = match.children || [];
+  }
+
+  return breadcrumbs;
+};
 
 const MyBreadcrumb = () => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
+  if (!pathnames.length) return null;
 
-  const firstSegment = pathnames[0];
-  const personalMatch = personal.find((item) => item.url === firstSegment);
-  const projectMatch = projects.find((item) => item.url === firstSegment);
-
-  const category = personalMatch ? "Personal" : projectMatch ? "Projects" : null;
-  const matchedItem = personalMatch || projectMatch;
+  const breadcrumbs = findBreadcrumbs(pathnames, items);
 
   return (
     <Breadcrumb>
       <BreadcrumbList>
-        <BreadcrumbItem>
-          <span>{category}</span>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbPage>{matchedItem?.title}</BreadcrumbPage>
-        </BreadcrumbItem>
+        {breadcrumbs.map((item, index) => (
+          <React.Fragment key={index}>
+            {index > 0 && <BreadcrumbSeparator />}
+            <BreadcrumbItem>
+              {index !== breadcrumbs.length - 1 ? ( //
+                <>{item.title}</>
+              ) : (
+                <BreadcrumbPage>{item.title}</BreadcrumbPage>
+              )}
+            </BreadcrumbItem>
+          </React.Fragment>
+        ))}
       </BreadcrumbList>
     </Breadcrumb>
   );

@@ -9,30 +9,51 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarMenuSub,
+  SidebarMenuSubItem,
+  SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
-import { User, House, Bot } from "lucide-react";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { User, House, Bot, ChevronDown } from "lucide-react";
 
-const personal = [
+const items = [
   {
-    title: "About Me",
-    url: "aboutme",
-    icon: User,
-    newTab: false,
-  },
-];
-
-const projects = [
-  {
-    title: "Simplyfi Hub",
-    url: "https://hub.simplyfi.co",
-    icon: House,
-    newTab: true,
+    title: "Personal",
+    url: "personal",
+    children: [
+      {
+        title: "About Me",
+        icon: User,
+        url: "aboutme",
+      },
+    ],
   },
   {
-    title: "Chatbot",
-    url: "chatbot",
-    icon: Bot,
-    newTab: false,
+    title: "Projects",
+    url: "projects",
+    children: [
+      {
+        title: "Simplyfi Hub",
+        icon: House,
+        url: "https://hub.simplyfi.co",
+        external: true,
+      },
+      {
+        title: "Chatbot",
+        icon: Bot,
+        url: "chatbot",
+        children: [
+          {
+            title: "Chat",
+            url: "chat",
+          },
+          {
+            title: "Knowledge Base",
+            url: "knowledgebase",
+          },
+        ],
+      },
+    ],
   },
 ];
 
@@ -40,40 +61,64 @@ const MySidebar = () => {
   return (
     <Sidebar>
       <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel>Personal</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {personal.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <Link to={item.url} target={item.newTab ? "_blank" : undefined}>
-                      <item.icon />
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-        <SidebarGroup>
-          <SidebarGroupLabel>Projects</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {projects.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <Link to={item.url} target={item.newTab ? "_blank" : undefined}>
-                      <item.icon />
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+        {items.map((level1, index) => (
+          <SidebarGroup key={index}>
+            <SidebarGroupLabel>{level1.title}</SidebarGroupLabel>
+            <SidebarGroupContent>
+              <SidebarMenu>
+                {level1.children.map((level2, index) => (
+                  <SidebarMenuItem key={index}>
+                    {!level2.children ? (
+                      <SidebarMenuButton asChild>
+                        <Link
+                          to={
+                            level2.external //
+                              ? level2.url
+                              : `${level1.url}/${level2.url}`
+                          }
+                          target={level2.external ? "_blank" : undefined}
+                        >
+                          <level2.icon />
+                          <span>{level2.title}</span>
+                        </Link>
+                      </SidebarMenuButton>
+                    ) : (
+                      <Collapsible defaultOpen className="group/collapsible">
+                        <CollapsibleTrigger asChild>
+                          <SidebarMenuButton>
+                            <level2.icon />
+                            {level2.title}
+                            <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                          </SidebarMenuButton>
+                        </CollapsibleTrigger>
+                        <CollapsibleContent>
+                          <SidebarMenuSub>
+                            {level2.children?.map((level3, index) => (
+                              <SidebarMenuSubItem key={index}>
+                                <SidebarMenuSubButton asChild>
+                                  <Link
+                                    to={
+                                      level3.external //
+                                        ? level3.url
+                                        : `${level1.url}/${level2.url}/${level3.url}`
+                                    }
+                                    target={level3.external ? "_blank" : undefined}
+                                  >
+                                    <span>{level3.title}</span>
+                                  </Link>
+                                </SidebarMenuSubButton>
+                              </SidebarMenuSubItem>
+                            ))}
+                          </SidebarMenuSub>
+                        </CollapsibleContent>
+                      </Collapsible>
+                    )}
+                  </SidebarMenuItem>
+                ))}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        ))}
       </SidebarContent>
     </Sidebar>
   );

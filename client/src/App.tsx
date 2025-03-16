@@ -28,8 +28,16 @@ function App() {
         >
           <Routes>
             <Route index element={<Navigate to="/aboutme" />} />
-            <Route path="/aboutme/*" element={<AboutMeRoutes />} />
-            <Route path="/chatbot/*" element={<ChatbotRoutes />} />
+
+            <Route path="personal">
+              <Route index element={<Navigate to="aboutme" />} />
+              <Route path="aboutme/*" element={<AboutMeRoutes />} />
+            </Route>
+
+            <Route path="projects">
+              <Route index element={<Navigate to="chatbot" />} />
+              <Route path="chatbot/*" element={<ChatbotRoutes />} />
+            </Route>
           </Routes>
         </div>
       </div>

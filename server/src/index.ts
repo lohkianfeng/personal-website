@@ -4,6 +4,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 
 import { router as chatRoute } from "@/routes/chatRoute";
+import { router as restaurantRoute } from "@/routes/restaurantRoute";
 
 // error handling
 process.on("uncaughtException", (err) => {
@@ -42,6 +43,7 @@ app.get("/api", (req: Request, res: Response): void => {
 });
 
 app.use("/api/chat", chatRoute);
+app.use("/api/restaurant", restaurantRoute);
 
 // http
 app.listen(config.port, () => {
