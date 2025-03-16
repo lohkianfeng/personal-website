@@ -1,22 +1,34 @@
 import { openai } from "@ai-sdk/openai";
-import { jsonSchema, streamText } from "ai";
+import { streamText, tool } from "ai";
+import { z } from "zod";
 
 export const maxDuration = 30;
 
 import { Request, Response } from "express";
 
-const postChat = async (req: Request, res: Response): Promise<any> => {
-  const { messages, system, tools } = req.body;
+import path from "path";
+import fs from "fs";
+const filePath = path.join(process.cwd(), "data", "restaurant.json");
+const restaurant = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-  console.log(req.body);
+const postChat = async (req: Request, res: Response): Promise<any> => {
+  const { messages } = req.body;
 
   const result = streamText({
     model: openai("gpt-4o-mini"),
     messages,
-    system,
-    tools: Object.fromEntries(
-      Object.keys(tools).map((name) => [name, { ...tools[name], parameters: jsonSchema(tools[name].parameters) }])
-    ),
+    system: `
+      You are a helpful assistant. Check your knowledge base before answering any questions.
+      Only respond to questions using information from tool calls.
+      If no relevant information is found in the tool calls, respond "Sorry, I don't know.".
+    `,
+    tools: {
+      getRestaurants: tool({
+        description: "Fetch a list of all restaurants from the knowledge base.",
+        parameters: z.object({}), // No parameters needed
+        execute: async () => restaurant,
+      }),
+    },
   });
 
   result.pipeDataStreamToResponse(res);

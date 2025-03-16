@@ -12,6 +12,7 @@ import { AssistantModal } from "@/components/assistant-ui/assistant-modal";
 const Chat = () => {
   const runtime = useChatRuntime({
     api: `${BASE_URL}api/chat`,
+    maxSteps: 3,
   });
 
   return (
