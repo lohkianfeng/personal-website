@@ -19,7 +19,18 @@ const items = [
         title: "About Me",
         icon: User,
         url: "aboutme",
-        newTab: false,
+      },
+    ],
+  },
+  {
+    title: "Work",
+    url: "work",
+    children: [
+      {
+        title: "Simplyfi Hub",
+        icon: House,
+        url: "https://hub.simplyfi.co",
+        external: true,
       },
     ],
   },
@@ -28,12 +39,6 @@ const items = [
     url: "projects",
     children: [
       {
-        title: "Simplyfi Hub",
-        icon: House,
-        url: "https://hub.simplyfi.co",
-        newTab: true,
-      },
-      {
         title: "Chatbot",
         icon: Bot,
         url: "chatbot",
@@ -41,12 +46,10 @@ const items = [
           {
             title: "Chat",
             url: "chat",
-            newTab: false,
           },
           {
             title: "Knowledge Base",
             url: "knowledgebase",
-            newTab: false,
           },
         ],
       },

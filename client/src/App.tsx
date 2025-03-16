@@ -24,7 +24,7 @@ function App() {
             height: "calc(100vh - 4rem)",
             width: `calc(100vw - 18rem)`,
           }}
-          className="grow overflow-auto px-4"
+          className="grow overflow-auto p-4"
         >
           <Routes>
             <Route index element={<Navigate to="/aboutme" />} />

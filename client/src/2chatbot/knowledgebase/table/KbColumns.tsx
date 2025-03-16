@@ -2,13 +2,18 @@ import Header from "@/components/uiOwn/DataTable/Header";
 
 import { type ColumnDef, type Row } from "@tanstack/react-table";
 export type KbDataT = {
+  id: number;
   name: string;
   address: string;
-  description: string;
   url: string;
+  description: string;
 };
 
 export const kbColumns: ColumnDef<KbDataT>[] = [
+  {
+    accessorKey: "id",
+    header: (data) => <Header column={data.column} />,
+  },
   {
     accessorKey: "name",
     header: (data) => <Header column={data.column} />,
@@ -18,11 +23,11 @@ export const kbColumns: ColumnDef<KbDataT>[] = [
     header: (data) => <Header column={data.column} />,
   },
   {
-    accessorKey: "description",
+    accessorKey: "url",
     header: (data) => <Header column={data.column} />,
   },
   {
-    accessorKey: "url",
+    accessorKey: "description",
     header: (data) => <Header column={data.column} />,
   },
 ];

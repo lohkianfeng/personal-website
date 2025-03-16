@@ -7,7 +7,9 @@ const AboutMeRoutes = () => {
         index
         element={
           <>
-            <h1>About Me</h1>
+            <p>Loh Kian Feng</p>
+            <p>lohkianfeng@gmail.com</p>
+            <p>+6013-3232 233</p>
           </>
         }
       />

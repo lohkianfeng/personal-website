@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import { useState } from "react";
 import {
   type ColumnDef,
@@ -6,7 +8,6 @@ import {
   type VisibilityState,
   getCoreRowModel,
   getFilteredRowModel,
-  getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
@@ -23,7 +24,7 @@ type DataTableProps<TData, TValue> = {
 
 const KbDataTable = <TData, TValue>({ columns, data, filterCols }: DataTableProps<TData, TValue>) => {
   const [sorting, setSorting] = useState<SortingState>([
-    { id: "id", desc: true }, //
+    { id: "id", desc: false }, //
   ]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
@@ -32,7 +33,6 @@ const KbDataTable = <TData, TValue>({ columns, data, filterCols }: DataTableProp
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
     onSortingChange: setSorting, // sort
     getSortedRowModel: getSortedRowModel(), // sort
     onColumnFiltersChange: setColumnFilters, // filter input
@@ -43,16 +43,21 @@ const KbDataTable = <TData, TValue>({ columns, data, filterCols }: DataTableProp
       columnFilters,
       columnVisibility,
     },
-    initialState: {
-      pagination: {
-        pageIndex: 0,
-        pageSize: 25,
-      },
-    },
   });
 
   return (
     <div className="flex h-full flex-col gap-4">
+      <p className="text-muted-foreground text-sm">
+        Scraped from{" "}
+        <Link
+          to="https://www.pavilion-kl.com/dine/"
+          target="_blank"
+          className="font-medium text-blue-500 hover:underline"
+        >
+          Pavilion KL Dine
+        </Link>
+      </p>
+
       <div className="flex justify-between">
         <div className="flex gap-2">
           <DataTableFilterInputs table={table} cols={filterCols} />

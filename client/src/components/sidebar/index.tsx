@@ -29,8 +29,8 @@ const items = [
     ],
   },
   {
-    title: "Projects",
-    url: "projects",
+    title: "Work",
+    url: "work",
     children: [
       {
         title: "Simplyfi Hub",
@@ -38,6 +38,12 @@ const items = [
         url: "https://hub.simplyfi.co",
         external: true,
       },
+    ],
+  },
+  {
+    title: "Projects",
+    url: "projects",
+    children: [
       {
         title: "Chatbot",
         icon: Bot,
