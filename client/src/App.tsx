@@ -1,31 +1,39 @@
-import { useChatRuntime } from "@assistant-ui/react-ai-sdk";
-import { AssistantRuntimeProvider } from "@assistant-ui/react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 
-import { ThreadList } from "@/components/assistant-ui/thread-list";
-import { Thread } from "@/components/assistant-ui/thread";
-
-import { AssistantModal } from "@/components/assistant-ui/assistant-modal";
-
-import { MyRuntimeProvider } from "./MyRuntimeProvider";
+import Sidebar from "@/components/sidebar";
+import Breadcrumb from "./components/breadcrumb";
+import AboutMeRoutes from "@/1aboutme";
+import ChatbotRoutes from "@/2chatbot";
 
 function App() {
-  const runtime = useChatRuntime({
-    api: "http://localhost:5000/api/chat",
-  });
-
   return (
-    <MyRuntimeProvider>
-      <AssistantRuntimeProvider runtime={runtime}>
-        <div className="grid h-dvh grid-cols-[200px_1fr] gap-x-2 px-4 py-4">
-          <ThreadList />
-          <Thread />
+    <BrowserRouter>
+      <Sidebar />
+      <div
+        style={{
+          height: "calc(100vh)",
+          width: "calc(100vw)",
+        }}
+      >
+        <div className="flex h-12 items-center border-b px-4">
+          <Breadcrumb />
         </div>
-      </AssistantRuntimeProvider>
 
-      <AssistantRuntimeProvider runtime={runtime}>
-        <AssistantModal />
-      </AssistantRuntimeProvider>
-    </MyRuntimeProvider>
+        <div
+          style={{
+            height: "calc(100vh - 4rem)",
+            width: `calc(100vw - 18rem)`,
+          }}
+          className="grow overflow-auto px-4"
+        >
+          <Routes>
+            <Route index element={<Navigate to="/aboutme" />} />
+            <Route path="/aboutme/*" element={<AboutMeRoutes />} />
+            <Route path="/chatbot/*" element={<ChatbotRoutes />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
