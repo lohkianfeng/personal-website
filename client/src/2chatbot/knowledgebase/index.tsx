@@ -22,7 +22,7 @@ const KnowledgeBase = () => {
     <KbDataTable //
       columns={kbColumns}
       data={data.restaurant}
-      filterCols={["name", "address", "url", "description"]}
+      filterCols={["name"]}
     />
   );
 };
