@@ -23,7 +23,7 @@
     "noUncheckedSideEffectImports": true,
 
     /* add */
-    "noImplicitAny": false,
+    // "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
