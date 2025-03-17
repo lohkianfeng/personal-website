@@ -44,8 +44,12 @@ const items = [
         url: "chatbot",
         children: [
           {
-            title: "Chat",
-            url: "chat",
+            title: "Chat Thread",
+            url: "chatthread",
+          },
+          {
+            title: "Chat Modal",
+            url: "chatmodal",
           },
           {
             title: "Knowledge Base",
