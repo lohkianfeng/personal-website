@@ -22,6 +22,7 @@ const corsOptions = {
   origin: [
     "http://localhost:3000", // dev
     "http://localhost", // dev (traefik)
+    "https://kianfeng.com", // prod
   ],
   credentials: true,
 };
