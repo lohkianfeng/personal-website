@@ -3,8 +3,8 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 
-import { router as chatRoute } from "@/routes/chatRoute";
-import { router as restaurantRoute } from "@/routes/restaurantRoute";
+import { router as chatRoute } from "./routes/chatRoute";
+import { router as restaurantRoute } from "./routes/restaurantRoute";
 
 // error handling
 process.on("uncaughtException", (err) => {
