@@ -19,11 +19,13 @@ const KnowledgeBase = () => {
   if (!data) return "No data";
 
   return (
-    <KbDataTable //
-      columns={kbColumns}
-      data={data.restaurant}
-      filterCols={["name"]}
-    />
+    <div className="p-4">
+      <KbDataTable //
+        columns={kbColumns}
+        data={data.restaurant}
+        filterCols={["name"]}
+      />
+    </div>
   );
 };
 

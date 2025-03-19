@@ -26,10 +26,10 @@ function App() {
 
         <div
           style={{
-            height: "calc(100vh - 4rem)",
-            width: `calc(100vw - ${isMobile ? "0rem" : "18rem"})`,
+            height: "calc(100vh - 3rem)",
+            width: `calc(100vw - ${isMobile ? "0rem" : "16rem"})`,
           }}
-          className="grow overflow-auto p-4"
+          className="grow overflow-auto"
         >
           <Routes>
             <Route index element={<Navigate to="personal" />} />

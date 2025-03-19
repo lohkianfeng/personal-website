@@ -15,7 +15,7 @@ const postChat = async (req: Request, res: Response): Promise<any> => {
   const { messages } = req.body;
 
   const result = streamText({
-    model: openai("gpt-4o-mini"),
+    model: openai.responses("gpt-4o-mini"),
     messages,
     system: `
       You are a helpful assistant. Check your knowledge base before answering any questions.
