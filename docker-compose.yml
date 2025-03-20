@@ -66,15 +66,15 @@ services:
       - "traefik.http.routers.server-router.entryPoints=websecure"
       - "traefik.http.routers.server-router.tls.certResolver=myresolver"
     depends_on:
-      personal_pg:
+      db_pg:
         condition: service_healthy
 
   # database
-  personal_pg:
+  db_pg:
     image: postgres:17-alpine
-    container_name: personal_pg
-    ports: # for local dev
-      - "5432:5432"
+    container_name: db_pg
+    # ports: # for local dev
+    #   - "5432:5432"
     environment:
       - POSTGRES_USER=${PGUSER}
       - POSTGRES_PASSWORD=${PGPASSWORD}
@@ -82,26 +82,26 @@ services:
     volumes:
       - ./database/postgres/data:/var/lib/postgresql/data
       - ./database/backups:/backups
-      # # security (for production)
-      # - ./database/pgConfig/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
-      # - ./database/pgConfig/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+      # security (for production)
+      - ./database/pgConfig/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+      - ./database/pgConfig/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${PGUSER}"]
       interval: 10s
       timeout: 5s
       retries: 5
 
-  # # database backup
-  # db_services:
-  #   build:
-  #     context: ./database
-  #     dockerfile: Dockerfile
-  #   image: db_services:v1
-  #   container_name: db_services
-  #   volumes:
-  #     - ./database/backups:/backups
-  #   env_file:
-  #     - .env
-  #   depends_on:
-  #     hub_pg:
-  #       condition: service_healthy
+  # database backup
+  db_services:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    image: db_services:v1
+    container_name: db_services
+    volumes:
+      - ./database/backups:/backups
+    env_file:
+      - .env
+    depends_on:
+      db_pg:
+        condition: service_healthy

@@ -5,7 +5,7 @@ perform_backup() {
   echo "Starting database backup at $(date)"
   
   # Run pg_dump and store the backup in the /backups directory
-  pg_dump -U "$PGUSER" -h hub_pg -F c "$PGDATABASE" > "/backups/db_backup_$(date +"%Y%m%d_%H%M%S").dump"
+  pg_dump -U "$PGUSER" -h db_pg -F c "$PGDATABASE" > "/backups/db_backup_$(date +"%Y%m%d_%H%M%S").dump"
   
   echo "Backup completed at $(date)"
 }
