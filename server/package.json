@@ -7,7 +7,11 @@
     "build": "tsc --build",
     "start": "node ./dist/index.js",
     "dev": "tsx watch ./src/index.ts",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "db:generate": "drizzle-kit generate --config=./src/drizzle.config.ts",
+    "db:drop": "drizzle-kit drop --config=./src/drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config=./src/drizzle.config.ts",
+    "db:studio": "drizzle-kit studio --config=./src/drizzle.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +23,9 @@
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.1",
     "express": "^4.21.2",
+    "pg": "^8.14.1",
     "zod": "^3.24.2"
   },
   "devDependencies": {
@@ -27,6 +33,8 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.10",
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.5",
     "prettier": "^3.5.3",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
