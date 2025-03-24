@@ -4,8 +4,9 @@ node_modules
 # build folder
 dist
 
-# env variables
-.env
-
 # pnpm version
 pnpm-lock.yaml
+
+# env variables
+.env
+google-service-account*.json

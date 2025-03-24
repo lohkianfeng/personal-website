@@ -8,6 +8,9 @@ const main = async () => {
   try {
     await client.query("BEGIN");
 
+    await client.query("CREATE EXTENSION IF NOT EXISTS vector CASCADE;");
+    console.log("✅ pgvector extension enabled successfully.");
+
     await client.query("COMMIT");
     console.log("✅ Seeding completed successfully.");
     process.exit(1);
