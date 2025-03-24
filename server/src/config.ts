@@ -1,7 +1,5 @@
 import "dotenv/config";
 
-const nodeEnv = process.env.NODE_ENV as string;
-
 type AppConfig = {
   nodeEnv: string;
   port: number;
@@ -17,7 +15,7 @@ type DbConfig = {
 };
 
 const config: AppConfig = {
-  nodeEnv: nodeEnv,
+  nodeEnv: process.env.NODE_ENV as string,
   port: Number(process.env.PORT),
   db: {
     pghost: process.env.PGHOST as string,
