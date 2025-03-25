@@ -2,13 +2,14 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 
 import { useIsMobile } from "@/hooks/use-mobile";
 import Sidebar from "@/components/sidebar";
-import { SidebarTrigger } from "@/components/ui/sidebar";
+import { useSidebar, SidebarTrigger } from "@/components/ui/sidebar";
 import Breadcrumb from "@/components/breadcrumb";
 import AboutMeRoutes from "@/1aboutme";
 import ChatbotRoutes from "@/2chatbot";
 
 function App() {
   const isMobile = useIsMobile();
+  const { open } = useSidebar();
 
   return (
     <BrowserRouter>
@@ -27,7 +28,11 @@ function App() {
         <div
           style={{
             height: "calc(100vh - 3rem)",
-            width: `calc(100vw - ${isMobile ? "0rem" : "16rem"})`,
+            width: `calc(100vw -  ${
+              !isMobile && open //
+                ? "16rem"
+                : "0rem"
+            })`,
           }}
           className="grow overflow-auto"
         >
