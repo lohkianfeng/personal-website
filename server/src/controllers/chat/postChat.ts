@@ -20,7 +20,7 @@ const postChat = async (req: Request, res: Response): Promise<any> => {
       After retrieving data, explain the result in clear, human-readable English.
     `,
     tools: tools,
-    maxSteps: 10,
+    maxSteps: 3,
   });
 
   result.pipeDataStreamToResponse(res);
@@ -49,7 +49,7 @@ export const queryBuilder = async (prompt: string) => {
   console.log(prompt);
 
   const result = await generateObject({
-    model: openai("gpt-4o-mini"),
+    model: openai("gpt-4o"),
     schema: z.object({
       query: z.string(),
     }),
@@ -65,6 +65,43 @@ export const queryBuilder = async (prompt: string) => {
       CONSTRAINT "users_email_unique" UNIQUE("email")
     )
 
+    "user_role" (
+      "id" serial PRIMARY KEY NOT NULL,
+      "name" varchar(255) NOT NULL,
+      CONSTRAINT "user_role_name_unique" UNIQUE("name")
+    );
+    >> Admin, Internal, Partner, User, Partner (Distributor)
+
+    "user_roles" (
+      "id" serial PRIMARY KEY NOT NULL,
+      "user_id" integer NOT NULL,
+      "user_role_id" integer DEFAULT 2 NOT NULL,
+      "updated_at" timestamp WITH time zone DEFAULT NOW() NOT NULL,
+      CONSTRAINT "user_roles_user_id_unique" UNIQUE("user_id")
+    );
+
+    "company" (
+      "id" serial PRIMARY KEY NOT NULL,
+      "name" varchar(255) NOT NULL,
+      "created_at" timestamp WITH time zone DEFAULT NOW() NOT NULL
+    );
+
+    "company_role" (
+      "id" serial PRIMARY KEY NOT NULL,
+      "name" varchar(255) NOT NULL,
+      CONSTRAINT "company_role_name_unique" UNIQUE("name")
+    );
+    >> Distributor, Owner (Booster), Employee, Guest, CC (Forecast), Owner (Bootcamp), Sales Partner
+
+    "company_roles" (
+      "id" serial PRIMARY KEY NOT NULL,
+      "user_id" integer NOT NULL,
+      "company_id" integer NOT NULL,
+      "company_role_id" integer NOT NULL,
+      "created_at" timestamp WITH time zone DEFAULT NOW() NOT NULL,
+      "updated_at" timestamp WITH time zone DEFAULT NOW() NOT NULL
+    );
+
     Only retrieval queries are allowed.
     `,
     prompt: prompt,
@@ -74,10 +111,12 @@ export const queryBuilder = async (prompt: string) => {
 };
 
 export const queryDatabase = async (query: string) => {
+  console.log(query);
+
   const client = await pool.connect();
 
   if (!query.trim().toLowerCase().startsWith("select")) {
-    throw new Error("Only SELECT queries are allowed");
+    return "Only SELECT queries are allowed";
   }
 
   try {
