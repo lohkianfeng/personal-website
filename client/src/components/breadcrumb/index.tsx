@@ -8,7 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { User, House, Bot } from "lucide-react";
+import { User, House, Bot, PawPrint } from "lucide-react";
 
 const items = [
   {
@@ -54,6 +54,17 @@ const items = [
           {
             title: "Knowledge Base",
             url: "knowledgebase",
+          },
+        ],
+      },
+      {
+        title: "Hubspot",
+        icon: PawPrint,
+        url: "hubspot",
+        children: [
+          {
+            title: "Contacts",
+            url: "contacts",
           },
         ],
       },

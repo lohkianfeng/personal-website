@@ -14,7 +14,7 @@ import {
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { User, House, Bot, ChevronDown } from "lucide-react";
+import { User, House, Bot, PawPrint, ChevronDown } from "lucide-react";
 
 const items = [
   {
@@ -60,6 +60,17 @@ const items = [
           {
             title: "Knowledge Base",
             url: "knowledgebase",
+          },
+        ],
+      },
+      {
+        title: "Hubspot",
+        icon: PawPrint,
+        url: "hubspot",
+        children: [
+          {
+            title: "Contacts",
+            url: "contacts",
           },
         ],
       },

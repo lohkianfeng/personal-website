@@ -6,6 +6,7 @@ import { useSidebar, SidebarTrigger } from "@/components/ui/sidebar";
 import Breadcrumb from "@/components/breadcrumb";
 import AboutMeRoutes from "@/1aboutme";
 import ChatbotRoutes from "@/2chatbot";
+import HubspotRoutes from "@/3hubspot";
 
 function App() {
   const isMobile = useIsMobile();
@@ -47,6 +48,7 @@ function App() {
             <Route path="projects">
               <Route index element={<Navigate to="chatbot" />} />
               <Route path="chatbot/*" element={<ChatbotRoutes />} />
+              <Route path="hubspot/*" element={<HubspotRoutes />} />
             </Route>
           </Routes>
         </div>
