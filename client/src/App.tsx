@@ -50,6 +50,17 @@ function App() {
               <Route path="chatbot/*" element={<ChatbotRoutes />} />
               <Route path="hubspot/*" element={<HubspotRoutes />} />
             </Route>
+
+            <Route path="hubspot">
+              <Route
+                path="callback/*"
+                element={
+                  <>
+                    <h1>here</h1>
+                  </>
+                }
+              />
+            </Route>
           </Routes>
         </div>
       </div>
