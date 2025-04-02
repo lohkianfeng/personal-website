@@ -1,14 +1,19 @@
 import express from "express";
 
 import getContacts from "../controllers/hubspot/getContacts";
-import getCallback from "../controllers/hubspot/getCallback";
+import getOauthCallback from "../controllers/hubspot/getOauthCallback";
+import getRemove from "../controllers/hubspot/getRemove";
 
 export const router = express.Router();
 
 router //
-  .route("/contacts")
+  .route("/contacts/:companyId")
   .get(getContacts);
 
 router //
-  .route("/callback")
-  .get(getCallback);
+  .route("/oauth-callback")
+  .get(getOauthCallback);
+
+router //
+  .route("/remove/:companyId")
+  .get(getRemove);

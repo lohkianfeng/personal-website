@@ -1,13 +1,21 @@
 import { Client } from "@hubspot/api-client";
+import exchangeForTokens, { refreshTokenStore } from "./exchangeForTokens";
+import axios from "axios";
 
 import { Request, Response } from "express";
 
 const getContacts = async (req: Request, res: Response): Promise<any> => {
-  const authHeader = req.headers.authorization;
-  if (!authHeader || !authHeader.startsWith("Bearer ")) throw new Error();
-  const token = authHeader.split(" ")[1];
+  const { companyId } = req.params;
+  const company_id = Number(companyId);
 
-  const hubspotClient = new Client({ accessToken: token });
+  let access_token = req.cookies.hubspot_access_token;
+  if (!access_token) {
+    const grant_type = "refresh_token";
+    access_token = await exchangeForTokens(res, company_id, grant_type);
+  }
+  if (!access_token) return res.status(200).json({});
+
+  const hubspotClient = new Client({ accessToken: access_token });
   const limit = 10;
   const after = undefined;
   const properties = undefined;
@@ -32,7 +40,13 @@ const getContacts = async (req: Request, res: Response): Promise<any> => {
     ...properties,
   }));
 
-  res.status(200).json({ contacts: formattedData });
+  const response = await axios.get("https://api.hubapi.com/account-info/v3/details", {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+
+  res.status(200).json({ contacts: formattedData, portalId: response.data.portalId });
 };
 
 export default getContacts;

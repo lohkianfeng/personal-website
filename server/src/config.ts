@@ -3,8 +3,14 @@ import "dotenv/config";
 type AppConfig = {
   nodeEnv: string;
   port: number;
-  hubspot: string;
+  hubspot: HubSpotConfig;
   db: DbConfig;
+};
+
+type HubSpotConfig = {
+  clientId: string;
+  clientSecret: string;
+  redirectUri: string;
 };
 
 type DbConfig = {
@@ -18,7 +24,11 @@ type DbConfig = {
 const config: AppConfig = {
   nodeEnv: process.env.NODE_ENV as string,
   port: Number(process.env.PORT),
-  hubspot: process.env.HUBSPOT_ACCESS_TOKEN as string,
+  hubspot: {
+    clientId: process.env.HUBSPOT_CLIENT_ID as string,
+    clientSecret: process.env.HUBSPOT_CLIENT_SECRET as string,
+    redirectUri: process.env.HUBSPOT_REDIRECT_URI as string,
+  },
   db: {
     pghost: process.env.PGHOST as string,
     pgport: Number(process.env.PGPORT),
