@@ -11,36 +11,43 @@ const exchangeForTokens = async (
   grant_type: "authorization_code" | "refresh_token",
   code?: string
 ) => {
-  if (grant_type === "refresh_token" && !refreshTokenStore[companyId]) return null;
+  try {
+    if (grant_type === "refresh_token" && !refreshTokenStore[companyId]) return null;
 
-  const response = await axios.post(
-    "https://api.hubapi.com/oauth/v1/token", //
-    new URLSearchParams({
-      grant_type: grant_type,
-      client_id: config.hubspot.clientId,
-      client_secret: config.hubspot.clientSecret,
-      ...(grant_type === "authorization_code" && {
-        redirect_uri: config.hubspot.redirectUri,
-        code: code,
-      }),
-      ...(grant_type === "refresh_token" && {
-        refresh_token: refreshTokenStore[companyId],
-      }),
-    })
-  );
+    const response = await axios.post(
+      "https://api.hubapi.com/oauth/v1/token", //
+      new URLSearchParams({
+        grant_type: grant_type,
+        client_id: config.hubspot.clientId,
+        client_secret: config.hubspot.clientSecret,
+        ...(grant_type === "authorization_code" && {
+          redirect_uri: config.hubspot.redirectUri,
+          code: code,
+        }),
+        ...(grant_type === "refresh_token" && {
+          refresh_token: refreshTokenStore[companyId],
+        }),
+      })
+    );
 
-  const { refresh_token, access_token, expires_in } = response.data;
+    const { refresh_token, access_token, expires_in } = response.data;
 
-  refreshTokenStore[companyId] = refresh_token;
+    refreshTokenStore[companyId] = refresh_token;
 
-  res.cookie("hubspot_access_token", access_token, {
-    httpOnly: true,
-    secure: true,
-    sameSite: "strict",
-    maxAge: Math.round(expires_in * 0.75 * 1000),
-  });
+    res.cookie("hubspot_access_token", access_token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "strict",
+      maxAge: Math.round(expires_in * 0.75 * 1000),
+    });
 
-  return access_token;
+    return access_token;
+  } catch (error) {
+    if (error.response.data.status === "BAD_REFRESH_TOKEN") {
+      delete refreshTokenStore[companyId];
+    }
+    return null;
+  }
 };
 
 export default exchangeForTokens;
