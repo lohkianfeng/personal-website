@@ -19,9 +19,13 @@ const exchangeForTokens = async (
       grant_type: grant_type,
       client_id: config.hubspot.clientId,
       client_secret: config.hubspot.clientSecret,
-      redirect_uri: config.hubspot.redirectUri,
-      ...(code && { code }),
-      ...(grant_type === "refresh_token" && { refresh_token: refreshTokenStore[companyId] }),
+      ...(grant_type === "authorization_code" && {
+        redirect_uri: config.hubspot.redirectUri,
+        code: code,
+      }),
+      ...(grant_type === "refresh_token" && {
+        refresh_token: refreshTokenStore[companyId],
+      }),
     })
   );
 

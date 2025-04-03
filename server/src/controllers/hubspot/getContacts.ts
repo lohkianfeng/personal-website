@@ -1,6 +1,5 @@
-import { Client } from "@hubspot/api-client";
-import exchangeForTokens, { refreshTokenStore } from "./exchangeForTokens";
 import axios from "axios";
+import exchangeForTokens from "./exchangeForTokens";
 
 import { Request, Response } from "express";
 
@@ -15,24 +14,17 @@ const getContacts = async (req: Request, res: Response): Promise<any> => {
   }
   if (!access_token) return res.status(200).json({});
 
-  const hubspotClient = new Client({ accessToken: access_token });
-  const limit = 10;
-  const after = undefined;
-  const properties = undefined;
-  const propertiesWithHistory = undefined;
-  const associations = undefined;
-  const archived = false;
+  const responseContacts = await axios.get(`https://api.hubapi.com/crm/v3/objects/contacts`, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+    params: {
+      limit: 10,
+      archived: false,
+    },
+  });
 
-  const apiResponse = await hubspotClient.crm.contacts.basicApi.getPage(
-    limit,
-    after,
-    properties,
-    propertiesWithHistory,
-    associations,
-    archived
-  );
-
-  const formattedData = apiResponse.results.map(({ id, createdAt, updatedAt, archived, properties }) => ({
+  const formattedData = responseContacts.data.results.map(({ id, createdAt, updatedAt, archived, properties }) => ({
     id,
     createdAt,
     updatedAt,
@@ -40,13 +32,13 @@ const getContacts = async (req: Request, res: Response): Promise<any> => {
     ...properties,
   }));
 
-  const response = await axios.get("https://api.hubapi.com/account-info/v3/details", {
+  const responseDetails = await axios.get(`https://api.hubapi.com/account-info/v3/details`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
   });
 
-  res.status(200).json({ contacts: formattedData, portalId: response.data.portalId });
+  res.status(200).json({ contacts: formattedData, portalId: responseDetails.data.portalId });
 };
 
 export default getContacts;

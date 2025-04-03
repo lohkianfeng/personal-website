@@ -1,5 +1,5 @@
 import config from "@/config";
-import { useQuery, useMutation } from "@tanstack/react-query";
+import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
 import { axiosPrivate } from "@/axios/axios";
 import Loading from "@/components/errorPages/Loading";
 import ContactsDataTable from "./table/ContactsDataTable";
@@ -7,10 +7,13 @@ import { contactsColumns } from "./table/ContactsColumns";
 import { Button } from "@/components/ui/button";
 
 const Contacts = () => {
+  const queryClient = useQueryClient();
+
+  const companyId = 1;
+
   const getContacts = useQuery({
     queryKey: ["contacts"],
     queryFn: async () => {
-      const companyId = 1;
       const response = await axiosPrivate.get(`/api/hubspot/contacts/${companyId}`);
       return response.data;
     },
@@ -18,11 +21,11 @@ const Contacts = () => {
   const { isPending, error, data } = getContacts;
 
   const removeIntegrationMutation = useMutation({
-    mutationFn: async (companyId: number) => {
+    mutationFn: async () => {
       await axiosPrivate.get(`/api/hubspot/remove/${companyId}`);
     },
     onSuccess: () => {
-      getContacts.refetch();
+      queryClient.invalidateQueries({ queryKey: ["contacts"] });
     },
   });
 
@@ -37,14 +40,13 @@ const Contacts = () => {
       `&redirect_uri=${encodeURIComponent(config.hubspot.redirectUri)}` +
       `&scope=oauth%20crm.objects.contacts.read` +
       `&optional_scope=crm.lists.read` +
-      `&state=${encodeURIComponent(window.location.href)}`;
+      `&state=${encodeURIComponent(companyId)}`;
 
     window.location.href = authUrl;
   };
 
   const handleRemove = async () => {
-    const companyId = 1;
-    removeIntegrationMutation.mutate(companyId);
+    removeIntegrationMutation.mutate();
   };
 
   return (
