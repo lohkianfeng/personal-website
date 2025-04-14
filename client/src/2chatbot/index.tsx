@@ -7,7 +7,7 @@ import KnowledgeBase from "./knowledgebase";
 const ChatbotRoutes = () => {
   return (
     <Routes>
-      <Route index element={<Navigate to="chat" />} />
+      <Route index element={<Navigate to="chatthread" />} />
       <Route path="chatthread" element={<ChatThread />} />
       <Route path="chatmodal" element={<ChatModal />} />
       <Route path="knowledgebase" element={<KnowledgeBase />} />
