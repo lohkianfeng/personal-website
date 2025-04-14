@@ -78,3 +78,7 @@ services:
     depends_on:
       db_pg:
         condition: service_healthy
+
+volumes:
+  caddy_data:
+  caddy_config:
