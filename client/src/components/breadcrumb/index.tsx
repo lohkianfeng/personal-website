@@ -63,8 +63,12 @@ const items = [
         url: "hubspot",
         children: [
           {
-            title: "Contacts",
-            url: "contacts",
+            title: "Public App",
+            url: "publicapp",
+          },
+          {
+            title: "Private App",
+            url: "privateapp",
           },
         ],
       },

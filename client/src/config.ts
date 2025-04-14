@@ -1,27 +1,25 @@
-type AppConfig = {
-  nodeEnv: string;
-  backend: BackendConfig;
-  hubspot: HubSpotConfig;
-};
+import { z } from "zod";
 
-type BackendConfig = {
-  url: string;
-};
+const schema = z.object({
+  nodeEnv: z.string(),
+  backend: z.object({
+    url: z.string().url(),
+  }),
+  hubspot: z.object({
+    clientId: z.string(),
+    redirectUri: z.string().url(),
+  }),
+});
 
-type HubSpotConfig = {
-  clientId: string;
-  redirectUri: string;
-};
-
-const config: AppConfig = {
-  nodeEnv: import.meta.env.VITE_NODE_ENV as string,
+const config = schema.parse({
+  nodeEnv: import.meta.env.VITE_NODE_ENV,
   backend: {
-    url: import.meta.env.VITE_BACKEND_URL as string,
+    url: import.meta.env.VITE_BACKEND_URL,
   },
   hubspot: {
-    clientId: import.meta.env.VITE_HUBSPOT_CLIENT_ID as string,
-    redirectUri: import.meta.env.VITE_HUBSPOT_REDIRECT_URI as string,
+    clientId: import.meta.env.VITE_HUBSPOT_CLIENT_ID,
+    redirectUri: import.meta.env.VITE_HUBSPOT_REDIRECT_URI,
   },
-};
+});
 
 export default config;

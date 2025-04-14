@@ -1,6 +1,6 @@
 import Header from "@/components/uiOwn/DataTable/Header";
 
-import { type ColumnDef, type Row } from "@tanstack/react-table";
+import { type ColumnDef } from "@tanstack/react-table";
 export type ContactsDataT = {
   id: number;
   name: string;
@@ -27,18 +27,3 @@ export const contactsColumns: ColumnDef<ContactsDataT>[] = [
     header: (data) => <Header column={data.column} />,
   },
 ];
-
-export const Cell = <T,>({ row, col }: { row: Row<T>; col: string }) => {
-  const data = row.original as Record<string, string[]>;
-  return (
-    <>
-      {data[col] //
-        .map((item, index) => (
-          <span key={index}>
-            {item}
-            <br />
-          </span>
-        ))}
-    </>
-  );
-};

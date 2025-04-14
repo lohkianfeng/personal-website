@@ -14,14 +14,15 @@ const exchangeForTokens = async (
   try {
     if (grant_type === "refresh_token" && !refreshTokenStore[companyId]) return null;
 
+    const { clientId, clientSecret, redirectUri } = config.hubspot.public;
     const response = await axios.post(
       "https://api.hubapi.com/oauth/v1/token", //
       new URLSearchParams({
         grant_type: grant_type,
-        client_id: config.hubspot.clientId,
-        client_secret: config.hubspot.clientSecret,
+        client_id: clientId,
+        client_secret: clientSecret,
         ...(grant_type === "authorization_code" && {
-          redirect_uri: config.hubspot.redirectUri,
+          redirect_uri: redirectUri,
           code: code,
         }),
         ...(grant_type === "refresh_token" && {

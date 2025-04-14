@@ -12,7 +12,7 @@ const getOauthCallback = async (req: Request, res: Response): Promise<any> => {
   const grant_type = "authorization_code";
   await exchangeForTokens(res, companyId, grant_type, code);
 
-  res.redirect("http://localhost:3000/projects/hubspot/contacts");
+  res.redirect("http://localhost:3000/projects/hubspot/publicapp");
 };
 
 export default getOauthCallback;

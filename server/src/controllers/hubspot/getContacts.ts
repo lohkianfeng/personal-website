@@ -14,7 +14,7 @@ const getContacts = async (req: Request, res: Response): Promise<any> => {
   }
   if (!access_token) return res.status(200).json({});
 
-  const responseContacts = await axios.get(`https://api.hubapi.com/crm/v3/objects/contacts`, {
+  const response = await axios.get(`https://api.hubapi.com/crm/v3/objects/contacts`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
@@ -24,7 +24,7 @@ const getContacts = async (req: Request, res: Response): Promise<any> => {
     },
   });
 
-  const formattedData = responseContacts.data.results.map(({ id, createdAt, updatedAt, archived, properties }) => ({
+  const formattedData = response.data.results.map(({ id, createdAt, updatedAt, archived, properties }) => ({
     id,
     createdAt,
     updatedAt,

@@ -2,11 +2,11 @@ import config from "@/config";
 import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
 import { axiosPrivate } from "@/axios/axios";
 import Loading from "@/components/errorPages/Loading";
-import ContactsDataTable from "./table/ContactsDataTable";
-import { contactsColumns } from "./table/ContactsColumns";
+import ContactsDataTable from "./public/ContactsDataTable";
+import { contactsColumns } from "./public/ContactsColumns";
 import { Button } from "@/components/ui/button";
 
-const Contacts = () => {
+const PublicApp = () => {
   const queryClient = useQueryClient();
 
   const companyId = 1;
@@ -75,4 +75,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default PublicApp;

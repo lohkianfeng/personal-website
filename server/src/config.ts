@@ -1,41 +1,48 @@
 import "dotenv/config";
+import { z } from "zod";
 
-type AppConfig = {
-  nodeEnv: string;
-  port: number;
-  hubspot: HubSpotConfig;
-  db: DbConfig;
-};
+const schema = z.object({
+  nodeEnv: z.string(),
+  port: z.coerce.number(),
+  hubspot: z.object({
+    public: z.object({
+      clientId: z.string(),
+      clientSecret: z.string(),
+      redirectUri: z.string().url(),
+    }),
+    private: z.object({
+      accessToken: z.string(),
+    }),
+  }),
+  db: z.object({
+    pghost: z.string(),
+    pgport: z.coerce.number(),
+    pguser: z.string(),
+    pgpassword: z.string(),
+    pgdatabase: z.string(),
+  }),
+});
 
-type HubSpotConfig = {
-  clientId: string;
-  clientSecret: string;
-  redirectUri: string;
-};
-
-type DbConfig = {
-  pghost: string;
-  pgport: number;
-  pguser: string;
-  pgpassword: string;
-  pgdatabase: string;
-};
-
-const config: AppConfig = {
-  nodeEnv: process.env.NODE_ENV as string,
-  port: Number(process.env.PORT),
+const config = schema.parse({
+  nodeEnv: process.env.NODE_ENV,
+  port: process.env.PORT,
   hubspot: {
-    clientId: process.env.HUBSPOT_CLIENT_ID as string,
-    clientSecret: process.env.HUBSPOT_CLIENT_SECRET as string,
-    redirectUri: process.env.HUBSPOT_REDIRECT_URI as string,
+    public: {
+      clientId: process.env.HUBSPOT_CLIENT_ID,
+      clientSecret: process.env.HUBSPOT_CLIENT_SECRET,
+      redirectUri: process.env.HUBSPOT_REDIRECT_URI,
+    },
+    private: {
+      accessToken: process.env.HUBSPOT_PRIVATE_APP_ACCESS_TOKEN,
+    },
   },
   db: {
-    pghost: process.env.PGHOST as string,
-    pgport: Number(process.env.PGPORT),
-    pguser: process.env.PGUSER as string,
-    pgpassword: process.env.PGPASSWORD as string,
-    pgdatabase: process.env.PGDATABASE as string,
+    pghost: process.env.PGHOST,
+    pgport: process.env.PGPORT,
+    pguser: process.env.PGUSER,
+    pgpassword: process.env.PGPASSWORD,
+    pgdatabase: process.env.PGDATABASE,
   },
-};
+});
 
 export default config;
