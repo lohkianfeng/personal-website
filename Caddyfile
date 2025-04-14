@@ -1,0 +1,16 @@
+kianfeng.com {
+    tls lohkianfeng@gmail.com
+
+    handle /api/* {
+        reverse_proxy server:5000
+    }
+
+    handle {
+        reverse_proxy client:80
+        header {
+            Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
+            Pragma "no-cache"
+            Expires "0"
+        }
+    }
+}
