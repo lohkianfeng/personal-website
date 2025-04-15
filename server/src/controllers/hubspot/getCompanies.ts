@@ -12,6 +12,7 @@ const getCompanies = async (req: Request, res: Response): Promise<any> => {
     params: {
       limit: 10,
       archived: false,
+      properties: ["name", "simplyfi_hub_company_id", "simplyfi_hub_expired_date"].join(","),
     },
   });
 
