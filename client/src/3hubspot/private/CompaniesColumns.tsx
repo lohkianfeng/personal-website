@@ -5,7 +5,7 @@ export type CompaniesDataT = {
   id: number;
   name: string;
   simplyfi_hub_company_id: number;
-  simplyfi_hub_expired_date: string;
+  simplyfi_hub_expiry_date: string;
 };
 
 export const companiesColumns: ColumnDef<CompaniesDataT>[] = [
@@ -22,7 +22,7 @@ export const companiesColumns: ColumnDef<CompaniesDataT>[] = [
     header: (data) => <Header column={data.column} />,
   },
   {
-    accessorKey: "simplyfi_hub_expired_date",
+    accessorKey: "simplyfi_hub_expiry_date",
     header: (data) => <Header column={data.column} />,
   },
 ];

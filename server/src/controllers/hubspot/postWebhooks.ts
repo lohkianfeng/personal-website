@@ -17,16 +17,16 @@ const postWebhooks = async (req: Request, res: Response): Promise<any> => {
       console.log("1. hubspot update company_id");
       console.log("2. give hubspot latest expiry date");
 
-      const expired_dates = ["2020-01-01", "2021-01-01", "2022-01-01", "2023-01-01"];
+      const expiry_dates = ["2020-01-01", "2021-01-01", "2022-01-01", "2023-01-01"];
       const index = Number(propertyValue ? propertyValue : "not number");
-      const expired_date = expired_dates[index];
+      const expiry_date = expiry_dates[index];
 
       const access_token = config.hubspot.private.accessToken;
       await axios.patch(
         `https://api.hubapi.com/crm/v3/objects/companies/${objectId}`,
         {
           properties: {
-            simplyfi_hub_expired_date: expired_date ? expired_date : "",
+            simplyfi_hub_expiry_date: expiry_date ? expiry_date : "",
           },
         },
         {
@@ -38,8 +38,8 @@ const postWebhooks = async (req: Request, res: Response): Promise<any> => {
       );
     }
 
-    if (propertyName === "simplyfi_hub_expired_date") {
-      console.log("1. hubspot update expired_date");
+    if (propertyName === "simplyfi_hub_expiry_date") {
+      console.log("1. hubspot update expiry_date");
       console.log("2. update our own database");
     }
   }
