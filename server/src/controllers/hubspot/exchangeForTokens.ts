@@ -43,7 +43,7 @@ const exchangeForTokens = async (
     });
 
     return access_token;
-  } catch (error) {
+  } catch (error: any) {
     if (error.response.data.status === "BAD_REFRESH_TOKEN") {
       delete refreshTokenStore[companyId];
     }

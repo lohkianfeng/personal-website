@@ -16,7 +16,7 @@ const getCompanies = async (req: Request, res: Response): Promise<any> => {
     },
   });
 
-  const formattedData = response.data.results.map(({ id, createdAt, updatedAt, archived, properties }) => ({
+  const formattedData = response.data.results.map(({ id, createdAt, updatedAt, archived, properties }: any) => ({
     id,
     createdAt,
     updatedAt,

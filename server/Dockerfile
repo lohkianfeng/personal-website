@@ -8,6 +8,14 @@ FROM node:22-alpine
 RUN apk add --no-cache bash postgresql-client
 RUN npm install -g pnpm tsx
 
+# Install OCR
+RUN apk add --no-cache \
+    tesseract-ocr \
+    graphicsmagick \
+    ghostscript \
+    poppler-data \
+    poppler-utils
+
 # Set working directory
 WORKDIR /app
 
