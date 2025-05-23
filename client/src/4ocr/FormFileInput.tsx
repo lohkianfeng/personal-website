@@ -65,7 +65,7 @@ const FormFileInput = ({ location, maxFiles = 10, maxSize = 10, accept }: Props)
           <div className="flex flex-col gap-2">
             <Progress value={uploadProgress} />
             <p className="text-sm text-gray-500">
-              {uploadProgress === 100 ? "OCR will take longer... " : `${uploadProgress}% uploaded`}
+              {uploadProgress === 100 ? "OCR in progress... " : `${uploadProgress}% uploaded`}
             </p>
           </div>
         )}
