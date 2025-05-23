@@ -11,6 +11,7 @@ RUN npm install -g pnpm tsx
 # Install OCR
 RUN apk add --no-cache \
     tesseract-ocr \
+    tesseract-ocr-data-eng \
     graphicsmagick \
     ghostscript
 
