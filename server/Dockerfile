@@ -12,9 +12,7 @@ RUN npm install -g pnpm tsx
 RUN apk add --no-cache \
     tesseract-ocr \
     graphicsmagick \
-    ghostscript \
-    poppler-data \
-    poppler-utils
+    ghostscript
 
 # Set working directory
 WORKDIR /app
