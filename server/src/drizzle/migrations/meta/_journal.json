@@ -1,5 +1,13 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1747966387087,
+      "tag": "0000_salty_norrin_radd",
+      "breakpoints": true
+    }
+  ]
 }

@@ -6,6 +6,8 @@ import cookieParser from "cookie-parser";
 import { router as chatRoute } from "./routes/chatRoute";
 import { router as restaurantRoute } from "./routes/restaurantRoute";
 import { router as hubspotRoute } from "./routes/hubspotRoute";
+import { router as fileRoute } from "./routes/fileRoute";
+import { router as ocrRoute } from "./routes/ocrRoute";
 
 // error handling
 process.on("uncaughtException", (err) => {
@@ -46,6 +48,8 @@ app.get("/api", (req: Request, res: Response): void => {
 app.use("/api/chat", chatRoute);
 app.use("/api/restaurant", restaurantRoute);
 app.use("/api/hubspot", hubspotRoute);
+app.use("/api/file", fileRoute);
+app.use("/api/ocr", ocrRoute);
 
 // http
 app.listen(config.port, () => {

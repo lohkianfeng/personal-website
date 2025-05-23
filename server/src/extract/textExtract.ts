@@ -5,26 +5,32 @@ import { openai } from "@ai-sdk/openai";
 import "dotenv/config";
 
 const policyScheduleSchema = z.object({
-  policyholderName: z.string(),
-  policyNumber: z.string(),
-  policyStartDate: z.string(),
-  policyEndDate: z.string(),
-  sumAssured: z.string(),
-  premiumAmount: z.string(),
-  paymentFrequency: z.string(),
-  nomineeName: z.string(),
-  planName: z.string(),
+  policyholderName: z.string().nullable(),
+  policyNumber: z.string().nullable(),
+  policyStartDate: z
+    .string()
+    .datetime()
+    .nullable()
+    .transform((val) => (val ? val.split("T")[0] : null)),
+  policyEndDate: z
+    .string()
+    .datetime()
+    .nullable()
+    .transform((val) => (val ? val.split("T")[0] : null)),
+  sumAssured: z.string().nullable(),
+  premiumAmount: z.string().nullable(),
+  paymentFrequency: z.string().nullable(),
+  nomineeName: z.string().nullable(),
+  planName: z.string().nullable(),
 });
 
-const textExtract = async (text: string) => {
+const textExtract = async (model = "gpt-4.1-nano", prompt: string, text: string) => {
   const result = await generateObject({
-    model: openai("gpt-4.1-nano", {
+    model: openai(model, {
       structuredOutputs: true,
     }),
     schema: policyScheduleSchema,
-    schemaName: "PolicySchedule",
-    schemaDescription: "Extracted policy schedule details from a life insurance document.",
-    prompt: `Extract life insurance policy schedule details from this document:\n\n${text}`,
+    prompt: `${prompt}\n\n${text}`,
   });
 
   const { object, usage } = result;

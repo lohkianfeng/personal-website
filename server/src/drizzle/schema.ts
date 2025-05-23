@@ -1,4 +1,4 @@
-import { pgTable, varchar, text, timestamp, index, vector } from "drizzle-orm/pg-core";
+import { pgTable, serial, varchar, text, integer, timestamp, index, vector } from "drizzle-orm/pg-core";
 import { createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
 import { nanoid } from "../lib/utils";
@@ -34,3 +34,12 @@ export const insertResourceSchema = createSelectSchema(resources).extend({}).omi
 
 // Type for resources - used to type API request params and within Components
 export type NewResourceParams = z.infer<typeof insertResourceSchema>;
+
+export const googleFile = pgTable("google_file", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  mimetype: varchar("mimetype", { length: 255 }).notNull(),
+  size: integer("size").notNull(),
+  location: varchar("location", { length: 255 }).notNull(),
+  destination: varchar("destination", { length: 255 }).notNull(),
+});

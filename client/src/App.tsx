@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { useIsMobile } from "@/hooks/use-mobile";
 import Sidebar from "@/components/sidebar";
 import { useSidebar, SidebarTrigger } from "@/components/ui/sidebar";
+import { Toaster } from "sonner";
 import Breadcrumb from "@/components/breadcrumb";
 import AboutMeRoutes from "@/1aboutme";
 import ChatbotRoutes from "@/2chatbot";
 import HubspotRoutes from "@/3hubspot";
+import OcrRoutes from "@/4ocr";
 
 function App() {
   const isMobile = useIsMobile();
@@ -15,6 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Sidebar />
+      <Toaster position="top-center" richColors />
       <div
         style={{
           height: "calc(100vh)",
@@ -49,6 +52,7 @@ function App() {
               <Route index element={<Navigate to="chatbot" />} />
               <Route path="chatbot/*" element={<ChatbotRoutes />} />
               <Route path="hubspot/*" element={<HubspotRoutes />} />
+              <Route path="ocr/*" element={<OcrRoutes />} />
             </Route>
 
             <Route path="hubspot">

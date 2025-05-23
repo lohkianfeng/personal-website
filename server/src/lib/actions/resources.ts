@@ -1,4 +1,4 @@
-import pool from "../../drizzle/poolConfig";
+import pool from "../../drizzle/pool";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { NewResourceParams, insertResourceSchema, resources } from "../../drizzle/schema";
 

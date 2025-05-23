@@ -8,9 +8,17 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { User, House, Bot, PawPrint } from "lucide-react";
+import { User, House, Bot, PawPrint, Search, type LucideIcon } from "lucide-react";
 
-const items = [
+export type MenuItem = {
+  title: string;
+  url: string;
+  icon?: LucideIcon;
+  external?: boolean;
+  children?: MenuItem[];
+};
+
+export const items: MenuItem[] = [
   {
     title: "Personal",
     url: "personal",
@@ -72,12 +80,17 @@ const items = [
           },
         ],
       },
+      {
+        title: "OCR",
+        icon: Search,
+        url: "ocr",
+      },
     ],
   },
 ];
 
-const findBreadcrumbs = (paths, menu) => {
-  let breadcrumbs = [];
+const findBreadcrumbs = (paths: string[], menu: MenuItem[]) => {
+  const breadcrumbs: MenuItem[] = [];
   let currentMenu = menu;
 
   for (const path of paths) {

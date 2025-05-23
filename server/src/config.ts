@@ -14,6 +14,9 @@ const schema = z.object({
       accessToken: z.string(),
     }),
   }),
+  google: z.object({
+    bucketName: z.string(),
+  }),
   db: z.object({
     pghost: z.string(),
     pgport: z.coerce.number(),
@@ -35,6 +38,9 @@ const config = schema.parse({
     private: {
       accessToken: process.env.HUBSPOT_PRIVATE_APP_ACCESS_TOKEN,
     },
+  },
+  google: {
+    bucketName: process.env.GOOGLE_BUCKET_NAME,
   },
   db: {
     pghost: process.env.PGHOST,

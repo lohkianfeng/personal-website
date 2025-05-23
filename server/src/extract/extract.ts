@@ -6,14 +6,7 @@ import pdfToImage from "./pdfToImage";
 import imageToText from "./imageToText";
 import textExtract from "./textExtract";
 
-const main = async () => {
-  if (process.argv.length !== 3) {
-    console.error("Usage: tsx extract.ts <path_to_your_scanned_pdf>");
-    return;
-  }
-
-  const filePath: string = process.argv[2];
-
+const extract = async (filePath: string, model: string, prompt: string) => {
   const savePath = "./output-images";
   await fs.mkdir(savePath, { recursive: true });
 
@@ -50,10 +43,9 @@ const main = async () => {
   }
 
   // 4. extract text
-  const { object, usage } = await textExtract(accText);
+  const result = await textExtract(model, prompt, accText);
 
-  console.log(object);
-  console.log(usage);
+  return result;
 };
 
-main();
+export default extract;

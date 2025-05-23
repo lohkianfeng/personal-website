@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { items } from "../breadcrumb";
 
 import {
   Sidebar,
@@ -14,73 +15,7 @@ import {
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { User, House, Bot, PawPrint, ChevronDown } from "lucide-react";
-
-const items = [
-  {
-    title: "Personal",
-    url: "personal",
-    children: [
-      {
-        title: "About Me",
-        icon: User,
-        url: "aboutme",
-      },
-    ],
-  },
-  {
-    title: "Work",
-    url: "work",
-    children: [
-      {
-        title: "Simplyfi Hub",
-        icon: House,
-        url: "https://hub.simplyfi.co",
-        external: true,
-      },
-    ],
-  },
-  {
-    title: "Projects",
-    url: "projects",
-    children: [
-      {
-        title: "Chatbot",
-        icon: Bot,
-        url: "chatbot",
-        children: [
-          {
-            title: "Chat Thread",
-            url: "chatthread",
-          },
-          {
-            title: "Chat Modal",
-            url: "chatmodal",
-          },
-          {
-            title: "Knowledge Base",
-            url: "knowledgebase",
-          },
-        ],
-      },
-      {
-        title: "Hubspot",
-        icon: PawPrint,
-        url: "hubspot",
-        children: [
-          {
-            title: "Public App",
-            url: "publicapp",
-          },
-          {
-            title: "Private App",
-            url: "privateapp",
-          },
-        ],
-      },
-    ],
-  },
-];
+import { ChevronDown } from "lucide-react";
 
 const MySidebar = () => {
   return (
@@ -91,7 +26,7 @@ const MySidebar = () => {
             <SidebarGroupLabel>{level1.title}</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
-                {level1.children.map((level2, index) => (
+                {level1.children?.map((level2, index) => (
                   <SidebarMenuItem key={index}>
                     {!level2.children ? (
                       <SidebarMenuButton asChild>
@@ -103,7 +38,7 @@ const MySidebar = () => {
                           }
                           target={level2.external ? "_blank" : undefined}
                         >
-                          <level2.icon />
+                          {level2.icon && <level2.icon />}
                           <span>{level2.title}</span>
                         </Link>
                       </SidebarMenuButton>
@@ -111,7 +46,7 @@ const MySidebar = () => {
                       <Collapsible defaultOpen className="group/collapsible">
                         <CollapsibleTrigger asChild>
                           <SidebarMenuButton>
-                            <level2.icon />
+                            {level2.icon && <level2.icon />}
                             {level2.title}
                             <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
                           </SidebarMenuButton>
