@@ -42,4 +42,5 @@ export const googleFile = pgTable("google_file", {
   size: integer("size").notNull(),
   location: varchar("location", { length: 255 }).notNull(),
   destination: varchar("destination", { length: 255 }).notNull(),
+  content: text("content").notNull(),
 });

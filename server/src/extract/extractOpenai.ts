@@ -3,12 +3,12 @@ import { openai } from "@ai-sdk/openai";
 
 import schemaBuild, { type SchemaFieldT } from "./schemaBuilder";
 
-const textExtract = async (
+const extractOpenai = async (
   //
   model = "gpt-4.1-nano",
   prompt: string,
   fields: SchemaFieldT[],
-  text: string
+  content: string
 ) => {
   const schema = schemaBuild(fields);
 
@@ -17,7 +17,7 @@ const textExtract = async (
       structuredOutputs: true,
     }),
     schema: schema,
-    prompt: `${prompt}\n\n${text}`,
+    prompt: `${prompt}\n\n${content}`,
   });
 
   const { object, usage } = result;
@@ -25,4 +25,4 @@ const textExtract = async (
   return { object, usage };
 };
 
-export default textExtract;
+export default extractOpenai;

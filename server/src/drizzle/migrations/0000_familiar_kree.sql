@@ -4,5 +4,6 @@ CREATE TABLE "google_file" (
 	"mimetype" varchar(255) NOT NULL,
 	"size" integer NOT NULL,
 	"location" varchar(255) NOT NULL,
-	"destination" varchar(255) NOT NULL
+	"destination" varchar(255) NOT NULL,
+	"content" text NOT NULL
 );

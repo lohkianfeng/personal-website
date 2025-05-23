@@ -3,6 +3,8 @@ import { drizzle } from "drizzle-orm/node-postgres";
 import { googleFile } from "../../drizzle/schema";
 import bucket from "../../google/bucket";
 
+import extractPdf from "../../extract/extractPdf";
+
 import { Request, Response } from "express";
 import { CustomError } from "../../types/error";
 
@@ -39,6 +41,11 @@ const uploadFile = async (req: Request, res: Response): Promise<any> => {
             metadata: { contentType: file.mimetype },
           });
 
+        let content = "";
+        if (file.mimetype === "application/pdf") {
+          content = await extractPdf(file.buffer, file.originalname);
+        }
+
         const result = await db
           .insert(googleFile)
           .values({
@@ -47,6 +54,7 @@ const uploadFile = async (req: Request, res: Response): Promise<any> => {
             size: file.size,
             location: location,
             destination: destination,
+            content: content,
           })
           .returning();
         const { id, name, mimetype, size } = result[0];

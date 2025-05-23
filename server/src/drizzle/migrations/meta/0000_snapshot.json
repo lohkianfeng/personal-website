@@ -1,5 +1,5 @@
 {
-  "id": "f9b544ac-2b63-43d9-ace5-96d7c94c9c2d",
+  "id": "bff2b9fa-053f-4bb8-a127-144949de39af",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -41,6 +41,12 @@
         "destination": {
           "name": "destination",
           "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "content": {
+          "name": "content",
+          "type": "text",
           "primaryKey": false,
           "notNull": true
         }
