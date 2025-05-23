@@ -5,8 +5,9 @@ import getNumberOfPdfPages from "./getNumberOfPdfPages";
 import pdfToImage from "./pdfToImage";
 import imageToText from "./imageToText";
 import textExtract from "./textExtract";
+import { type SchemaFieldT } from "./schemaBuilder";
 
-const extract = async (filePath: string, model: string, prompt: string) => {
+const extract = async (filePath: string, model: string, prompt: string, fields: SchemaFieldT[]) => {
   const savePath = "./output-images";
   await fs.mkdir(savePath, { recursive: true });
 
@@ -43,7 +44,7 @@ const extract = async (filePath: string, model: string, prompt: string) => {
   }
 
   // 4. extract text
-  const result = await textExtract(model, prompt, accText);
+  const result = await textExtract(model, prompt, fields, accText);
 
   return result;
 };

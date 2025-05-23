@@ -46,13 +46,13 @@ const TokenCostTable = ({ model, usage }: { model: ModelT; usage: UsageT | null 
       </TableHeader>
       <TableBody>
         <TableRow>
-          <TableCell>Prompt Tokens</TableCell>
+          <TableCell>Prompt Tokens (Input)</TableCell>
           <TableCell>{promptTokens}</TableCell>
           <TableCell>{prices.prompt.toFixed(2)}</TableCell>
           <TableCell>{promptAmount.toFixed(6)}</TableCell>
         </TableRow>
         <TableRow>
-          <TableCell>Completion Tokens</TableCell>
+          <TableCell>Completion Tokens (Output)</TableCell>
           <TableCell>{completionTokens}</TableCell>
           <TableCell>{prices.completion.toFixed(2)}</TableCell>
           <TableCell>{completionAmount.toFixed(6)}</TableCell>

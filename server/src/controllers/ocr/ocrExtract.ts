@@ -25,7 +25,7 @@ const ocrExtract = async (req: Request, res: Response): Promise<any> => {
     const { fileId } = req.params;
     const file_id = Number(fileId);
 
-    const { model, prompt } = req.body;
+    const { model, prompt, fields } = req.body;
 
     const result = await db //
       .select()
@@ -48,7 +48,7 @@ const ocrExtract = async (req: Request, res: Response): Promise<any> => {
     const writer = fs.createWriteStream(filePath);
     await pipeline(response.data, writer);
 
-    const { object, usage } = (await extract(filePath, model, prompt)) as any;
+    const { object, usage } = (await extract(filePath, model, prompt, fields)) as any;
 
     await fsPromises.unlink(filePath);
 

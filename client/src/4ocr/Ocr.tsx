@@ -19,10 +19,14 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Paperclip, Eye, Trash, ChevronRight } from "lucide-react";
+import { Paperclip, Eye, Trash, Plus, ChevronRight } from "lucide-react";
+
+export type FieldT = "string" | "number" | "date" | "boolean";
+export type SchemaFieldT = { name: string; type: FieldT };
 
 const Ocr = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +35,18 @@ const Ocr = () => {
 
   const [model, setModel] = useState<ModelT>("gpt-4.1-nano");
   const [prompt, setPrompt] = useState("Extract life insurance policy schedule details from this document");
+  const [fields, setFields] = useState<SchemaFieldT[]>([
+    { name: "planName", type: "string" },
+    { name: "policyHolderName", type: "string" },
+    { name: "policyNumber", type: "string" },
+    { name: "policyStartDate", type: "date" },
+    { name: "policyEndDate", type: "date" },
+    { name: "currency", type: "string" },
+    { name: "sumAssured", type: "number" },
+    { name: "premiumAmount", type: "number" },
+    { name: "paymentFrequency", type: "string" },
+    { name: "expired", type: "boolean" },
+  ]);
 
   const [extractedData, setExtractedData] = useState<any>(null);
 
@@ -71,6 +87,7 @@ const Ocr = () => {
         id: fileId,
         model: model,
         prompt: prompt,
+        fields: fields,
       });
       setExtractedData(data);
     }
@@ -173,6 +190,62 @@ const Ocr = () => {
           <div className="space-y-2">
             <Label htmlFor="prompt">Prompt</Label>
             <Textarea id="prompt" value={prompt} onChange={(e) => setPrompt(e.target.value)} />
+          </div>
+
+          <div className="space-y-2">
+            <Label>Fields</Label>
+            {fields.map((field, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <Input
+                  id={`field-${index}`}
+                  placeholder="Field name"
+                  className="w-60"
+                  value={field.name}
+                  onChange={(e) => {
+                    const updatedFields = [...fields];
+                    updatedFields[index].name = e.target.value;
+                    setFields(updatedFields);
+                  }}
+                />
+                <Select
+                  value={field.type}
+                  onValueChange={(value: FieldT) => {
+                    const updatedFields = [...fields];
+                    updatedFields[index].type = value;
+                    setFields(updatedFields);
+                  }}
+                >
+                  <SelectTrigger className="w-30">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem className="cursor-pointer" value="string">
+                      String
+                    </SelectItem>
+                    <SelectItem className="cursor-pointer" value="number">
+                      Number
+                    </SelectItem>
+                    <SelectItem className="cursor-pointer" value="date">
+                      Date
+                    </SelectItem>
+                    <SelectItem className="cursor-pointer" value="boolean">
+                      Boolean
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+                <Button
+                  variant="outline"
+                  onClick={() => {
+                    setFields(fields.filter((_, idx) => idx !== index));
+                  }}
+                >
+                  <Trash />
+                </Button>
+              </div>
+            ))}
+            <Button onClick={() => setFields([...fields, { name: "", type: "string" }])}>
+              <Plus /> Add Field
+            </Button>
           </div>
         </CardContent>
       </Card>

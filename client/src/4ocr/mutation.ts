@@ -3,6 +3,7 @@ import { axiosPrivate } from "@/axios/axios";
 import { type AxiosProgressEvent } from "axios";
 import { toast } from "sonner";
 import { type ModelT } from "./TokenCostTable";
+import { type SchemaFieldT } from "./Ocr";
 
 const useQueryOcr = () => {
   const queryClient = useQueryClient();
@@ -44,8 +45,18 @@ const useQueryOcr = () => {
   });
 
   const ocrExtract = useMutation({
-    mutationFn: async ({ id, model, prompt }: { id: number; model: ModelT; prompt: string }) => {
-      const response = await axiosPrivate.post(`/api/ocr/extract/${id}`, { model, prompt });
+    mutationFn: async ({
+      id,
+      model,
+      prompt,
+      fields,
+    }: {
+      id: number;
+      model: ModelT;
+      prompt: string;
+      fields: SchemaFieldT[];
+    }) => {
+      const response = await axiosPrivate.post(`/api/ocr/extract/${id}`, { model, prompt, fields });
       return response.data;
     },
     onSuccess: () => {
