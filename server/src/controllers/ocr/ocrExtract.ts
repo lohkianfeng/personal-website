@@ -3,7 +3,8 @@ import { drizzle } from "drizzle-orm/node-postgres";
 import { eq } from "drizzle-orm";
 import { googleFile } from "../../drizzle/schema";
 
-import extractOpenai from "../../extract/extractOpenai";
+import extractOpenai from "./extract/extractOpenai";
+import askOpenai from "./ask/askOpenai";
 
 import { Request, Response } from "express";
 import { CustomError } from "../../types/error";
@@ -27,10 +28,13 @@ const ocrExtract = async (req: Request, res: Response): Promise<any> => {
     const { content } = result[0];
 
     const { object, usage } = await extractOpenai(model, prompt, fields, content);
+    const { text, sources, usage: usage2 } = await askOpenai(model, object);
+
+    console.log(usage2);
 
     await client.query("COMMIT");
 
-    return res.status(200).json({ object, usage });
+    return res.status(200).json({ object, usage, text, sources, usage2 });
   } catch (error: unknown) {
     const err = error as CustomError;
     await client.query("ROLLBACK");

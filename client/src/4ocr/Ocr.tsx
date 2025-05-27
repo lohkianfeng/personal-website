@@ -25,6 +25,8 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { Button } from "@/components/ui/button";
 import { Paperclip, Eye, Trash, Plus, ChevronRight } from "lucide-react";
 
+import ReactMarkdown from "react-markdown";
+
 export type FieldT = "string" | "number" | "date" | "boolean";
 export type SchemaFieldT = { name: string; type: FieldT };
 
@@ -274,6 +276,30 @@ const Ocr = () => {
 
           <Instruction text="Pricing" />
           <TokenCostTable model={model} usage={extractedData?.usage} />
+
+          <Instruction text="Text" />
+          <div className="min-h-32 rounded-lg bg-gray-50 p-4 text-sm">
+            <ReactMarkdown>{extractedData?.text ?? null}</ReactMarkdown>
+          </div>
+
+          <Instruction text="Sources" />
+          <div className="rounded-lg bg-gray-50 p-4 text-sm">
+            {(extractedData?.sources ?? []).map((source: { title: string; url: string }, index: number) => (
+              <div key={index} className="">
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline hover:text-blue-800"
+                >
+                  {source.title}
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <Instruction text="Pricing2" />
+          <TokenCostTable model={model} usage={extractedData?.usage2} />
         </CardContent>
       </Card>
     </div>

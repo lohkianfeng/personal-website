@@ -3,7 +3,7 @@ import { drizzle } from "drizzle-orm/node-postgres";
 import { googleFile } from "../../drizzle/schema";
 import bucket from "../../google/bucket";
 
-import extractPdf from "../../extract/extractPdf";
+import extractPdf from "../ocr/extract/extractPdf";
 
 import { Request, Response } from "express";
 import { CustomError } from "../../types/error";
