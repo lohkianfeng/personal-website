@@ -2,8 +2,8 @@
   "files": [],
   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
 
-  /* add */
   "compilerOptions": {
+    /* Alias */
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]

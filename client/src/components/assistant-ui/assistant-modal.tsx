@@ -1,5 +1,3 @@
-"use client";
-
 import { BotIcon, ChevronDownIcon } from "lucide-react";
 
 import { type FC, forwardRef } from "react";
