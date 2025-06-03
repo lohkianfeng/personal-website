@@ -1,11 +1,11 @@
 import express from "express";
 
-import upload from "../middleware/upload";
+import upload from "@/middleware/upload";
 
-import uploadFile from "../controllers/file/uploadFile";
-import getFiles from "../controllers/file/getFiles";
-import getSignedUrl from "../controllers/file/getSignedUrl";
-import deleteFile from "../controllers/file/deleteFile";
+import uploadFile from "@/controllers/file/uploadFile";
+import getFiles from "@/controllers/file/getFiles";
+import getSignedUrl from "@/controllers/file/getSignedUrl";
+import deleteFile from "@/controllers/file/deleteFile";
 
 export const router = express.Router();
 

@@ -1,6 +1,6 @@
 import express from "express";
 
-import ocrExtract from "../controllers/ocr/ocrExtract";
+import ocrExtract from "@/controllers/ocr/ocrExtract";
 
 export const router = express.Router();
 

@@ -1,13 +1,13 @@
-import config from "./config";
+import config from "@/config";
 import express, { Request, Response } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 
-import { router as chatRoute } from "./routes/chatRoute";
-import { router as restaurantRoute } from "./routes/restaurantRoute";
-import { router as hubspotRoute } from "./routes/hubspotRoute";
-import { router as fileRoute } from "./routes/fileRoute";
-import { router as ocrRoute } from "./routes/ocrRoute";
+import { router as chatRoute } from "@/routes/chatRoute";
+import { router as restaurantRoute } from "@/routes/restaurantRoute";
+import { router as hubspotRoute } from "@/routes/hubspotRoute";
+import { router as fileRoute } from "@/routes/fileRoute";
+import { router as ocrRoute } from "@/routes/ocrRoute";
 
 // error handling
 process.on("uncaughtException", (err) => {

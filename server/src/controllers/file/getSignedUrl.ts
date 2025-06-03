@@ -1,11 +1,11 @@
-import pool from "../../drizzle/pool";
+import pool from "@/drizzle/pool";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { eq } from "drizzle-orm";
-import { googleFile } from "../../drizzle/schema";
-import bucket from "../../google/bucket";
+import { googleFile } from "@/drizzle/schema";
+import bucket from "@/google/bucket";
 
 import { Request, Response } from "express";
-import { CustomError } from "../../types/error";
+import { CustomError } from "@/types/error";
 
 const getSignedUrl = async (req: Request, res: Response): Promise<any> => {
   const client = await pool.connect();

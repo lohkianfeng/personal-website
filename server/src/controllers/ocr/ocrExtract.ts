@@ -1,13 +1,13 @@
-import pool from "../../drizzle/pool";
+import pool from "@/drizzle/pool";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { eq } from "drizzle-orm";
-import { googleFile } from "../../drizzle/schema";
+import { googleFile } from "@/drizzle/schema";
 
 import extractOpenai from "./extract/extractOpenai";
 import askOpenai from "./ask/askOpenai";
 
 import { Request, Response } from "express";
-import { CustomError } from "../../types/error";
+import { CustomError } from "@/types/error";
 
 const ocrExtract = async (req: Request, res: Response): Promise<any> => {
   const client = await pool.connect();

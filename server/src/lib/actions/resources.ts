@@ -1,12 +1,12 @@
-import pool from "../../drizzle/pool";
+import pool from "@/drizzle/pool";
 import { drizzle } from "drizzle-orm/node-postgres";
-import { NewResourceParams, insertResourceSchema, resources } from "../../drizzle/schema";
+import { NewResourceParams, insertResourceSchema, resources } from "@/drizzle/schema";
 
-import { generateEmbeddings } from "../../lib/ai/embedding";
-import { embeddings as embeddingsTable } from "../../drizzle/schema";
+import { generateEmbeddings } from "@/lib/ai/embedding";
+import { embeddings as embeddingsTable } from "@/drizzle/schema";
 
 import { Request, Response } from "express";
-import { CustomError } from "../../types/error";
+import { CustomError } from "@/types/error";
 
 const createResource = async (input: NewResourceParams) => {
   const client = await pool.connect();

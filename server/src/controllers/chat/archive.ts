@@ -2,7 +2,7 @@ import { openai } from "@ai-sdk/openai";
 import { streamText, tool, generateObject } from "ai";
 import { z } from "zod";
 
-import pool from "../../drizzle/pool";
+import pool from "@/drizzle/pool";
 
 export const maxDuration = 30;
 

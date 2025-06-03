@@ -1,11 +1,11 @@
 import express from "express";
 
-import getContacts from "../controllers/hubspot/getContacts";
-import getOauthCallback from "../controllers/hubspot/getOauthCallback";
-import getRemove from "../controllers/hubspot/getRemove";
+import getContacts from "@/controllers/hubspot/getContacts";
+import getOauthCallback from "@/controllers/hubspot/getOauthCallback";
+import getRemove from "@/controllers/hubspot/getRemove";
 
-import getCompanies from "../controllers/hubspot/getCompanies";
-import postWebhooks from "../controllers/hubspot/postWebhooks";
+import getCompanies from "@/controllers/hubspot/getCompanies";
+import postWebhooks from "@/controllers/hubspot/postWebhooks";
 
 export const router = express.Router();
 

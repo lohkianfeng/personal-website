@@ -1,5 +1,5 @@
 import path from "path";
-import config from "../config";
+import config from "@/config";
 import { Storage } from "@google-cloud/storage";
 
 const serviceAccountPath = path.resolve(process.cwd(), "google-service-account.json");

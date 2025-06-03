@@ -1,8 +1,8 @@
 import { embed, embedMany } from "ai";
 import { openai } from "@ai-sdk/openai";
-import db from "../../drizzle/db";
+import db from "@/drizzle/db";
 import { cosineDistance, desc, gt, sql } from "drizzle-orm";
-import { embeddings } from "../../drizzle/schema";
+import { embeddings } from "@/drizzle/schema";
 
 const embeddingModel = openai.embedding("text-embedding-3-small");
 

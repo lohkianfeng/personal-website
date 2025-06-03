@@ -1,12 +1,12 @@
-import pool from "../../drizzle/pool";
+import pool from "@/drizzle/pool";
 import { drizzle } from "drizzle-orm/node-postgres";
-import { googleFile } from "../../drizzle/schema";
-import bucket from "../../google/bucket";
+import { googleFile } from "@/drizzle/schema";
+import bucket from "@/google/bucket";
 
-import extractPdf from "../ocr/extract/extractPdf";
+import extractPdf from "@/controllers/ocr/extract/extractPdf";
 
 import { Request, Response } from "express";
-import { CustomError } from "../../types/error";
+import { CustomError } from "@/types/error";
 
 type FileT = {
   id: number;
